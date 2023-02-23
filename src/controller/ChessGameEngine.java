@@ -22,7 +22,7 @@ public class ChessGameEngine{
     private ChessGamePiece currentPiece;
     private boolean        firstClick;
     private int            currentPlayer;
-    private ChessGameBoard board;
+    private final ChessGameBoard board;
     private King           king1;
     private King           king2;
     // ----------------------------------------------------------
@@ -119,18 +119,12 @@ public class ChessGameEngine{
         }
         if ( currentPlayer == 2 ) // black player
         {
-            if ( currentPiece.getColorOfPiece() == ChessGamePiece.BLACK ){
-                return true;
-            }
-            return false;
+            return currentPiece.getColorOfPiece() == ChessGamePiece.BLACK;
         }
         else
         // white player
         {
-            if ( currentPiece.getColorOfPiece() == ChessGamePiece.WHITE ){
-                return true;
-            }
-            return false;
+            return currentPiece.getColorOfPiece() == ChessGamePiece.WHITE;
         }
     }
     /**
@@ -173,7 +167,6 @@ public class ChessGameEngine{
         else
         {
             board.resetBoard( false );
-            // System.exit(0);
         }
     }
     /**
