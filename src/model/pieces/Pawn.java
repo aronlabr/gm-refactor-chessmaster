@@ -131,18 +131,18 @@ public class Pawn
     public ImageIcon createImageByPieceType(){
         if ( getColorOfPiece() == ChessGamePiece.WHITE ){
             return new ImageIcon(
-                getClass().getResource("../resources/chessImages/WhitePawn.gif")
+                getClass().getResource("../../resources/chessImages/WhitePawn.gif")
             );            
         }
         else if ( getColorOfPiece() == ChessGamePiece.BLACK ){
             return new ImageIcon(
-                getClass().getResource("../resources/chessImages/BlackPawn.gif")
+                getClass().getResource("../../resources/chessImages/BlackPawn.gif")
             );            
         }
         else
         {
             return new ImageIcon(
-                getClass().getResource("../resources/chessImages/default-Unassigned.gif")
+                getClass().getResource("../../resources/chessImages/default-Unassigned.gif")
             );           
         }
     }
