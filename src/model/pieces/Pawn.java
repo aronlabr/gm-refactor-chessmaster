@@ -1,7 +1,10 @@
+package model.pieces;
 
-
+import view.ChessGameBoard;
 import javax.swing.ImageIcon;
 import java.util.ArrayList;
+import controller.ChessGamePiece;
+
 // -------------------------------------------------------------------------
 /**
  * Represents a Pawn game piece. Unique in that it can move two locations on its
@@ -128,18 +131,18 @@ public class Pawn
     public ImageIcon createImageByPieceType(){
         if ( getColorOfPiece() == ChessGamePiece.WHITE ){
             return new ImageIcon(
-                getClass().getResource("chessImages/WhitePawn.gif")
+                getClass().getResource("../resources/chessImages/WhitePawn.gif")
             );            
         }
         else if ( getColorOfPiece() == ChessGamePiece.BLACK ){
             return new ImageIcon(
-                getClass().getResource("chessImages/BlackPawn.gif")
+                getClass().getResource("../resources/chessImages/BlackPawn.gif")
             );            
         }
         else
         {
             return new ImageIcon(
-                getClass().getResource("chessImages/default-Unassigned.gif")
+                getClass().getResource("../resources/chessImages/default-Unassigned.gif")
             );           
         }
     }

@@ -1,9 +1,13 @@
+package controller;
 
-
+import main.ChessPanel;
+import model.board.BoardSquare;
+import model.pieces.King;
 import java.util.ArrayList;
 import java.awt.Color;
 import javax.swing.JOptionPane;
 import java.awt.event.MouseEvent;
+import view.ChessGameBoard;
 // -------------------------------------------------------------------------
 /**
  * This is the backend behind the Chess game. Handles the turn-based aspects of

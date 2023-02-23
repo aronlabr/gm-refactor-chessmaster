@@ -5,6 +5,7 @@ nbbuild/
 nbdist/
 nbactions.xml
 nb-configuration.xml
+.scannerwork/
 
 *.class
 .mtj.tmp/

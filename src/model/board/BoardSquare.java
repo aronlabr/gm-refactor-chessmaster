@@ -1,5 +1,8 @@
+package model.board;
 
 
+
+import controller.ChessGamePiece;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 // -------------------------------------------------------------------------

@@ -1,5 +1,16 @@
+package view;
 
 
+
+import model.board.BoardSquare;
+import main.ChessPanel;
+import controller.ChessGamePiece;
+import model.pieces.Queen;
+import model.pieces.Rook;
+import model.pieces.Bishop;
+import model.pieces.Knight;
+import model.pieces.King;
+import model.pieces.Pawn;
 import java.util.ArrayList;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;

@@ -1,4 +1,4 @@
-
+package controller;
 
 import java.awt.GridLayout;
 import javax.swing.*;

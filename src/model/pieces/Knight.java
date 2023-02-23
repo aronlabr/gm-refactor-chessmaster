@@ -1,5 +1,9 @@
+package model.pieces;
 
 
+
+import controller.ChessGamePiece;
+import view.ChessGameBoard;
 import javax.swing.ImageIcon;
 import java.util.ArrayList;
 // -------------------------------------------------------------------------
@@ -101,18 +105,18 @@ public class Knight
     public ImageIcon createImageByPieceType(){
         if ( getColorOfPiece() == ChessGamePiece.WHITE ){
             return new ImageIcon(
-                getClass().getResource("chessImages/WhiteKnight.gif")
+                getClass().getResource("../resources/chessImages/WhiteKnight.gif")
             );            
         }
         else if ( getColorOfPiece() == ChessGamePiece.BLACK ){
             return new ImageIcon(
-                getClass().getResource("chessImages/BlackKnight.gif")
+                getClass().getResource("../resources/chessImages/BlackKnight.gif")
             );            
         }
         else
         {
             return new ImageIcon(
-                getClass().getResource("chessImages/default-Unassigned.gif")
+                getClass().getResource("../resources/chessImages/default-Unassigned.gif")
             );            
         }
     }

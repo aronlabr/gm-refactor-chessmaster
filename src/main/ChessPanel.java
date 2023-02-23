@@ -1,5 +1,10 @@
+package main;
 
-
+import controller.ChessGameEngine;
+import controller.ChessGameLog;
+import controller.ChessGraveyard;
+import controller.ChessMenuBar;
+import view.ChessGameBoard;
 import java.awt.*;
 import javax.swing.*;
 // -------------------------------------------------------------------------
