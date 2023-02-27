@@ -111,24 +111,16 @@ public class ChessGameEngine{
      * @return boolean true if the piece is valid, false otherwise
      */
     private boolean selectedPieceIsValid(){
-        if ( currentPiece == null ) // user tried to select an empty square
-        {
+        // Si no se ha seleccionado ninguna pieza, no es un movimiento válido
+        if ( currentPiece == null ) {
             return false;
         }
-        if ( currentPlayer == 2 ) // black player
-        {
-            if ( currentPiece.getColorOfPiece() == ChessGamePiece.BLACK ){
-                return true;
-            }
-            return false;
-        }
-        else
-        // white player
-        {
-            if ( currentPiece.getColorOfPiece() == ChessGamePiece.WHITE ){
-                return true;
-            }
-            return false;
+        if ( currentPlayer == 2 ) {
+            // Si el jugador es negro, la pieza seleccionada debe ser negra
+            return currentPiece.getColorOfPiece() == ChessGamePiece.BLACK;
+        } else {
+            // Si el jugador es blanco, la pieza seleccionada debe ser blanca
+            return currentPiece.getColorOfPiece() == ChessGamePiece.WHITE;
         }
     }
     /**
@@ -244,72 +236,55 @@ public class ChessGameEngine{
      * @param e
      *            the mouse event from the listener
      */
-    public void determineActionFromSquareClick( MouseEvent e ){
-        BoardSquare squareClicked = (BoardSquare)e.getSource();
+    // refactorizando 
+    public void determineActionFromSquareClick(MouseEvent e) {
+        BoardSquare squareClicked = (BoardSquare) e.getSource();
         ChessGamePiece pieceOnSquare = squareClicked.getPieceOnSquare();
         board.clearColorsOnBoard();
-        if ( firstClick ){
-            currentPiece = squareClicked.getPieceOnSquare();
-            if ( selectedPieceIsValid() ){
-                currentPiece.showLegalMoves( board );
-                squareClicked.setBackground( Color.GREEN );
-                firstClick = false;
-            }
-            else
-            {
-                if ( currentPiece != null ){
-                    JOptionPane.showMessageDialog(
-                        squareClicked,
-                        "You tried to pick up the other player's piece! "
-                            + "Get some glasses and pick a valid square.",
-                        "Illegal move",
-                        JOptionPane.ERROR_MESSAGE );
-                }
-                else
-                {
-                    JOptionPane.showMessageDialog(
-                        squareClicked,
-                        "You tried to pick up an empty square! "
-                            + "Get some glasses and pick a valid square.",
-                        "Illegal move",
-                        JOptionPane.ERROR_MESSAGE );
-                }
-            }
+        
+        if (firstClick) {
+            handleFirstClick(squareClicked);
+        } else {
+            handleSecondClick(squareClicked, pieceOnSquare);
         }
-        else
-        {
-            if ( pieceOnSquare == null ||
-                !pieceOnSquare.equals( currentPiece ) ) // moving
-            {
-                boolean moveSuccessful =
-                    currentPiece.move(
-                        board,
-                        squareClicked.getRow(),
-                        squareClicked.getColumn() );
-                if ( moveSuccessful ){
-                    checkGameConditions();
-                }
-                else
-                {
-                    int row = squareClicked.getRow();
-                    int col = squareClicked.getColumn();
-                    JOptionPane.showMessageDialog(
-                        squareClicked,
-                        "The move to row " + ( row + 1 ) + " and column "
-                            + ( col + 1 )
-                            + " is either not valid or not legal "
-                            + "for this piece. Choose another move location, "
-                            + "and try using your brain this time!",
-                        "Invalid move",
-                        JOptionPane.ERROR_MESSAGE );
-                }
-                firstClick = true;
+    }
+    
+    private void handleFirstClick(BoardSquare squareClicked) {
+        currentPiece = squareClicked.getPieceOnSquare();
+        
+        if (selectedPieceIsValid()) {
+            currentPiece.showLegalMoves(board);
+            squareClicked.setBackground(Color.GREEN);
+            firstClick = false;
+        } else {
+            String message;
+            if (currentPiece != null) {
+                message = "You tried to pick up the other player's piece! "
+                        + "Get some glasses and pick a valid square.";
+            } else {
+                message = "You tried to pick up an empty square! "
+                        + "Get some glasses and pick a valid square.";
             }
-            else
-            // user is just unselecting the current piece
-            {
-                firstClick = true;
+            JOptionPane.showMessageDialog(squareClicked, message, "Illegal move", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+    
+    private void handleSecondClick(BoardSquare squareClicked, ChessGamePiece pieceOnSquare) {
+        if (pieceOnSquare == null || !pieceOnSquare.equals(currentPiece)) {
+            boolean moveSuccessful = currentPiece.move(board, squareClicked.getRow(), squareClicked.getColumn());
+            if (moveSuccessful) {
+                checkGameConditions();
+            } else {
+                int row = squareClicked.getRow();
+                int col = squareClicked.getColumn();
+                String message = "The move to row " + (row + 1) + " and column " + (col + 1)
+                        + " is either not valid or not legal for this piece. Choose another move location, "
+                        + "and try using your brain this time!";
+                JOptionPane.showMessageDialog(squareClicked, message, "Invalid move", JOptionPane.ERROR_MESSAGE);
             }
+            firstClick = true;
+        } else {
+            firstClick = true;
         }
     }
 }
