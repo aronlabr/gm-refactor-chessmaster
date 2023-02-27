@@ -251,18 +251,15 @@ public class ChessGameEngine{
                 squareClicked.setBackground( Color.GREEN );
                 firstClick = false;
             }
-            else
-            {
-                if ( currentPiece != null ){
-                    JOptionPane.showMessageDialog(
-                        squareClicked,
-                        "You tried to pick up the other player's piece! "
-                            + "Get some glasses and pick a valid square.",
-                        "Illegal move",
-                        JOptionPane.ERROR_MESSAGE );
-                }
-                else
-                {
+            else if ( currentPiece != null ){
+                JOptionPane.showMessageDialog(
+                    squareClicked,
+                    "You tried to pick up the other player's piece! "
+                        + "Get some glasses and pick a valid square.",
+                    "Illegal move",
+                    JOptionPane.ERROR_MESSAGE );
+            }
+            else {
                     JOptionPane.showMessageDialog(
                         squareClicked,
                         "You tried to pick up an empty square! "
@@ -270,7 +267,6 @@ public class ChessGameEngine{
                         "Illegal move",
                         JOptionPane.ERROR_MESSAGE );
                 }
-            }
         }
         else
         {
