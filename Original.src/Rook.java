@@ -1,18 +1,9 @@
 import javax.swing.ImageIcon;
 import java.util.ArrayList;
-// -------------------------------------------------------------------------
-/**
- * Represents a Rook game piece.
- *
- * @author Ben Katz (bakatz)
- * @author Myles David II (davidmm2)
- * @author Danielle Bushrow (dbushrow)
- * @version 2010.11.17
- */
+ 
 public class Rook
     extends ChessGamePiece{
-    // private ArrayList<String> possibleMoves;
-    // ----------------------------------------------------------
+ 
     /**
      * Create a new Rook object.
      *
@@ -55,18 +46,18 @@ public class Rook
     public ImageIcon createImageByPieceType(){
         if ( getColorOfPiece() == ChessGamePiece.WHITE ){
             return new ImageIcon(
-                getClass().getResource("chessImages/WhiteRook.gif")
+                getClass().getResource("ChessImages/WhiteRook.gif")
             );            
         }
         else if ( getColorOfPiece() == ChessGamePiece.BLACK ){
             return new ImageIcon(
-                getClass().getResource("chessImages/BlackRook.gif")
+                getClass().getResource("ChessImages/BlackRook.gif")
             );            
         }
         else
         {
             return new ImageIcon(
-                getClass().getResource("chessImages/default-Unassigned.gif")
+                getClass().getResource("ChessImages/default-Unassigned.gif")
             );        
         }
     }

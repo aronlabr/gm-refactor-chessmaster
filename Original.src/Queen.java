@@ -2,29 +2,10 @@ import javax.swing.ImageIcon;
 import java.util.ArrayList;
 // import java.awt.Color;
 // -------------------------------------------------------------------------
-/**
- * Represents a Queen game piece.
- *
- * @author Ben Katz (bakatz)
- * @author Myles David II (davidmm2)
- * @author Danielle Bushrow (dbushrow)
- * @version 2010.11.17
- */
+ 
 public class Queen
     extends ChessGamePiece{
-    // ----------------------------------------------------------
-    /**
-     * Create a new Queen object.
-     *
-     * @param board
-     *            the board the queen is on
-     * @param row
-     *            the row location of the queen
-     * @param col
-     *            the column location of the queen
-     * @param color
-     *            either GamePiece.WHITE, BLACK, or UNASSIGNED
-     */
+    
     public Queen( ChessGameBoard board, int row, int col, int color ){
         super( board, row, col, color );
     }
@@ -63,18 +44,18 @@ public class Queen
     public ImageIcon createImageByPieceType(){
         if ( getColorOfPiece() == ChessGamePiece.WHITE ){
             return new ImageIcon(
-                getClass().getResource("chessImages/WhiteQueen.gif")
+                getClass().getResource("ChessImages/WhiteQueen.gif")
             );            
         }
         else if ( getColorOfPiece() == ChessGamePiece.BLACK ){
             return new ImageIcon(
-                getClass().getResource("chessImages/BlackQueen.gif")
+                getClass().getResource("ChessImages/BlackQueen.gif")
             );            
         }
         else
         {
             return new ImageIcon(
-                getClass().getResource("chessImages/default-Unassigned.gif")
+                getClass().getResource("ChessImages/default-Unassigned.gif")
             ); 
         }
     }

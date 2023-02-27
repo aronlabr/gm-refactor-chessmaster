@@ -1,21 +1,10 @@
 import java.awt.Component;
 import java.awt.event.*;
 import javax.swing.*;
-// -------------------------------------------------------------------------
-/**
- * Represents the north menu-bar that contains various controls for the game.
- *
- * @author Ben Katz (bakatz)
- * @author Myles David II (davidmm2)
- * @author Danielle Bushrow (dbushrow)
- * @version 2010.11.17
- */
+ 
 public class ChessMenuBar
     extends JMenuBar{
-    // ----------------------------------------------------------
-    /**
-     * Create a new ChessMenuBar object.
-     */
+     
     public ChessMenuBar(){
         String[] menuCategories = { "File", "Options", "Help" };
         String[] menuItemLists =
@@ -32,23 +21,11 @@ public class ChessMenuBar
             this.add( currMenu );
         }
     }
-    /**
-     * Listener for the north menu bar.
-     *
-     * @author Ben Katz (bakatz)
-     * @author Myles David II (davidmm2)
-     * @author Danielle Bushrow (dbushrow)
-     * @version 2010.11.17
-     */
+     
     private class MenuListener
         implements ActionListener
     {
-        /**
-         * Takes an appropriate action based on which menu button is clicked
-         *
-         * @param event
-         *            the mouse event from the source
-         */
+         
         @Override
         public void actionPerformed( ActionEvent event ){
             String buttonName = ( (JMenuItem)event.getSource() ).getText();
@@ -70,10 +47,7 @@ public class ChessMenuBar
             }
         }
     }
-    // ----------------------------------------------------------
-    /**
-     * Takes an appropriate action if the about button is clicked.
-     */
+ 
     private void aboutHandler(){
         JOptionPane.showMessageDialog(
             this.getParent(),

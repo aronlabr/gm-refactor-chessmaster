@@ -1,14 +1,7 @@
 import javax.swing.ImageIcon;
 import java.util.ArrayList;
 // -------------------------------------------------------------------------
-/**
- * Represents a King game piece.
- *
- * @author Ben Katz (bakatz)
- * @author Myles David II (davidmm2)
- * @author Danielle Bushrow (dbushrow)
- * @version 2010.11.17
- */
+ 
 public class King
     extends ChessGamePiece{
     // ----------------------------------------------------------
@@ -75,18 +68,18 @@ public class King
     public ImageIcon createImageByPieceType(){
         if ( getColorOfPiece() == ChessGamePiece.WHITE ){
             return new ImageIcon(
-                getClass().getResource("chessImages/WhiteKing.gif")
+                getClass().getResource("ChessImages/WhiteKing.gif")
             );            
         }
         else if ( getColorOfPiece() == ChessGamePiece.BLACK ){
             return new ImageIcon(
-                getClass().getResource("chessImages/BlackKing.gif" )
+                getClass().getResource("ChessImages/BlackKing.gif" )
             );            
         }
         else
         {
             return new ImageIcon(
-                getClass().getResource("chessImages/default-Unassigned.gif" )
+                getClass().getResource("ChessImages/default-Unassigned.gif" )
             );            
         }
     }
