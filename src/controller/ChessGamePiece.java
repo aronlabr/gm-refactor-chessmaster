@@ -109,6 +109,10 @@ public abstract class ChessGamePiece{
             possibleMoves = calculatePossibleMoves( board );
         }
     }
+    
+    protected ChessGamePiece() {
+
+    }
     // ----------------------------------------------------------
     /**
      * Generates and returns a list of Strings that represent possible move
