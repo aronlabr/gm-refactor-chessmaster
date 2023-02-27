@@ -16,7 +16,7 @@ import controller.ChessGamePiece;
  * @author Danielle Bushrow (dbushrow)
  * @version 2010.11.17
  */
-public class Pawn
+public final class Pawn
     extends ChessGamePiece{
     private boolean notMoved;
     // ----------------------------------------------------------
@@ -75,7 +75,7 @@ public class Pawn
      */
     @Override
     protected ArrayList<String> calculatePossibleMoves( ChessGameBoard board ){
-        ArrayList<String> moves = new ArrayList<String>();
+        ArrayList<String> moves = new ArrayList<>();
         if ( isPieceOnScreen() ){
             int currRow =
                 getColorOfPiece() == ChessGamePiece.WHITE

@@ -14,28 +14,28 @@ import view.ChessGameBoard;
  * @author mildr
  */
 public class PieceFactory {
-    public static ChessGamePiece createChessPiece(String PieceType, ChessGameBoard board,
+    public static ChessGamePiece createChessPiece(String pieceType, ChessGameBoard board,
                                                   int row,
                                                   int col,
                                                   int color){
         ChessGamePiece piece;
         piece = null;
-        if("Bishop".equalsIgnoreCase(PieceType)){
+        if("Bishop".equalsIgnoreCase(pieceType)){
             piece = new Bishop(board, row, col, color);
         }
-        else if("King".equalsIgnoreCase(PieceType)){
+        else if("King".equalsIgnoreCase(pieceType)){
             piece = new King(board, row, col, color);
         }
-        else if("Knight".equalsIgnoreCase(PieceType)){
+        else if("Knight".equalsIgnoreCase(pieceType)){
             piece = new Knight(board, row, col, color);
         }
-        else if("Pawn".equalsIgnoreCase(PieceType)){
+        else if("Pawn".equalsIgnoreCase(pieceType)){
             piece = new Pawn(board, row, col, color);
         }
-        else if("Queen".equalsIgnoreCase(PieceType)){
+        else if("Queen".equalsIgnoreCase(pieceType)){
             piece = new Queen(board, row, col, color);
         }
-        else if("Rook".equalsIgnoreCase(PieceType)){
+        else if("Rook".equalsIgnoreCase(pieceType)){
             piece = new Rook(board, row, col, color);
         }
         else{
