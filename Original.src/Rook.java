@@ -1,3 +1,5 @@
+package clases;
+
 import javax.swing.ImageIcon;
 import java.util.ArrayList;
 // -------------------------------------------------------------------------
@@ -11,7 +13,6 @@ import java.util.ArrayList;
  */
 public class Rook
     extends ChessGamePiece{
-    // private ArrayList<String> possibleMoves;
     // ----------------------------------------------------------
     /**
      * Create a new Rook object.
@@ -39,7 +40,7 @@ public class Rook
         ArrayList<String> southMoves = calculateSouthMoves( board, 8 );
         ArrayList<String> westMoves = calculateWestMoves( board, 8 );
         ArrayList<String> eastMoves = calculateEastMoves( board, 8 );
-        ArrayList<String> allMoves = new ArrayList<String>();
+        ArrayList<String> allMoves = new ArrayList<>();
         allMoves.addAll( northMoves );
         allMoves.addAll( southMoves );
         allMoves.addAll( westMoves );
@@ -47,7 +48,7 @@ public class Rook
         return allMoves;
     }
     /**
-     * Creates an icon for this piece depending on the piece's color.
+     * Creates an icon for this piece depending on the pieces color.
      *
      * @return ImageIcon the ImageIcon representation of this piece.
      */
