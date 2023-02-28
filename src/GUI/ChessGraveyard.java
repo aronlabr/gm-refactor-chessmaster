@@ -1,5 +1,8 @@
 package GUI;
+
 import java.awt.GridLayout;
+import java.util.ArrayList;
+
 import javax.swing.*;
 
 // -------------------------------------------------------------------------
@@ -12,39 +15,52 @@ import javax.swing.*;
  * @version 2010.11.17
  */
 public class ChessGraveyard
-    extends JPanel{
+        extends JPanel {
     private String title;
+
     // ----------------------------------------------------------
     /**
      * Create a new ChessGraveyard object.
      *
      * @param title
-     *            the title of the graveyard
+     *              the title of the graveyard
      */
-    public ChessGraveyard( String title ){
+    public ChessGraveyard(String title) {
         this.title = title;
-        this.add( new JLabel( title ) );
-        this.setLayout( new GridLayout( 8, 0 ) );
+        this.add(new JLabel(title));
+        this.setLayout(new GridLayout(8, 0));
     }
+
     // ----------------------------------------------------------
     /**
      * Adds a piece to the graveyard.
      *
      * @param piece
-     *            the GamePiece to add
+     *              the GamePiece to add
      */
-    public void addPiece( ChessGamePiece piece ){
-        piece.setPieceLocation( -1, -1 );
+    public void addPiece(ChessGamePiece piece) {
+        piece.setPieceLocation(-1, -1);
         JLabel pieceLabel = new JLabel();
-        pieceLabel.setIcon( piece.getImage() );
-        this.add( pieceLabel );
+        pieceLabel.setIcon(piece.getImage());
+        this.add(pieceLabel);
     }
+
     // ----------------------------------------------------------
     /**
      * Removes all pieces from the graveyard.
      */
-    public void clearGraveyard(){
+    public void clearGraveyard() {
         this.removeAll();
-        this.add( new JLabel( title ) );
+        this.add(new JLabel(title));
     }
+
+    /**
+     * Gets the title of the graveyard.
+     * 
+     * @return String the title
+     */
+    public String getTitle() {
+        return title;
+    }
+
 }

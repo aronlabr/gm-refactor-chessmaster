@@ -1,6 +1,11 @@
 package GUI;
 import java.awt.*;
 import javax.swing.*;
+
+import org.junit.*;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 // -------------------------------------------------------------------------
 /**
  * The main panel of the Chess game.
@@ -83,5 +88,12 @@ public class ChessPanel
         {
             return null;
         }
+    }
+
+    @Test
+    public void testGetGameLog() {
+        ChessPanel panel = new ChessPanel();
+        ChessGameLog log = panel.getGameLog();
+        assertTrue(log instanceof ChessGameLog);
     }
 }

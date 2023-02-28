@@ -2,6 +2,12 @@ package GUI;
 import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
 import java.util.Date;
+
+
+import org.junit.*;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 // -------------------------------------------------------------------------
 /**
  * A scrollable textArea representing the game log. (i.e. moves made by each
@@ -61,5 +67,20 @@ public class ChessGameLog
             return textArea.getText();
         }
         return textArea.getText().substring( indexOfLastNewLine + 1 );
+    }
+
+    /**
+     * Tests the ChessGameLog class.
+     */
+    @Test
+    public void testChessGameLog(){
+        ChessGameLog log = new ChessGameLog();
+        Date date = new Date();
+        log.addToLog( "test" );
+        assertEquals(date + " - " + "test", log.getLastLog() );
+        log.addToLog( "test2" );
+        assertEquals( date + " - " + "test2", log.getLastLog() );
+        log.clearLog();
+        assertEquals( "", log.getLastLog() );
     }
 }

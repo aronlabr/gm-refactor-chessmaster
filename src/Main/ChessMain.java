@@ -2,7 +2,6 @@ package Main;
 import javax.swing.*;
 
 import GUI.ChessPanel;
-
 // -------------------------------------------------------------------------
 /**
  * Shows the GUI for the Chess game.
@@ -27,4 +26,7 @@ public class ChessMain{
         frame.pack();
         frame.setVisible( true );
     }
+
 }
+
+
