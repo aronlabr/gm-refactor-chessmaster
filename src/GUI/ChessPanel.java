@@ -4,6 +4,8 @@ import javax.swing.*;
 
 import org.junit.*;
 
+import Interfaces.MenuFactory;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 // -------------------------------------------------------------------------
@@ -29,6 +31,7 @@ public class ChessPanel
      */
     public ChessPanel(){
         this.setLayout( new BorderLayout() );
+        //creamos un menuBar factory
         menuBar = new ChessMenuBar();
         gameBoard = new ChessGameBoard();
         gameLog = new ChessGameLog();
@@ -77,17 +80,8 @@ public class ChessPanel
      *            the number of the player (1 or 2)
      * @return ChessGraveyard the graveyard requested
      */
-    public ChessGraveyard getGraveyard( int whichPlayer ){
-        if ( whichPlayer == 1 ){
-            return playerOneGraveyard;
-        }
-        else if ( whichPlayer == 2 ){
-            return playerTwoGraveyard;
-        }
-        else
-        {
-            return null;
-        }
+    public ChessGraveyard getGraveyard(int whichPlayer) {
+        return (whichPlayer == 1) ? playerOneGraveyard : (whichPlayer == 2) ? playerTwoGraveyard : null;
     }
 
     @Test
