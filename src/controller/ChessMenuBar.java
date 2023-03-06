@@ -27,8 +27,8 @@ public class ChessMenuBar
         for ( int i = 0; i < menuCategories.length; i++ ){
             JMenu currMenu = new JMenu( menuCategories[i] );
             String[] currMenuItemList = menuItemLists[i].split( "," );
-            for ( int j = 0; j < currMenuItemList.length; j++ ){
-                JMenuItem currItem = new JMenuItem( currMenuItemList[j] );
+            for (String currMenuItemList1 : currMenuItemList) {
+                JMenuItem currItem = new JMenuItem(currMenuItemList1);
                 currItem.addActionListener( new MenuListener() );
                 currMenu.add( currItem );
             }
@@ -102,9 +102,14 @@ public class ChessMenuBar
         while ( possibleFrame != null && !( possibleFrame instanceof JFrame ) ){
             possibleFrame = possibleFrame.getParent();
         }
-        JFrame frame = (JFrame)possibleFrame;
-        frame.setVisible( false );
-        frame.dispose();
+        JFrame frame = null;
+        if (possibleFrame instanceof JFrame) {
+            frame = (JFrame) possibleFrame;
+        }
+        if (frame != null) {
+            frame.setVisible(false);
+            frame.dispose();
+        }
     }
     /**
      * Takes an appropriate action if the toggle graveyard button is clicked.

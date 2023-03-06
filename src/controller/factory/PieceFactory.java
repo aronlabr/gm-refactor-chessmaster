@@ -14,12 +14,12 @@ import view.ChessGameBoard;
  * @author mildr
  */
 public class PieceFactory {
+    private PieceFactory() {}
     public static ChessGamePiece createChessPiece(String pieceType, ChessGameBoard board,
                                                   int row,
                                                   int col,
                                                   int color){
         ChessGamePiece piece;
-        piece = null;
         if("Bishop".equalsIgnoreCase(pieceType)){
             piece = new Bishop(board, row, col, color);
         }

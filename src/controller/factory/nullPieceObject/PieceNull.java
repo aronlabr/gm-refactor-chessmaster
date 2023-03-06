@@ -10,11 +10,13 @@ import javax.swing.ImageIcon;
 import view.ChessGameBoard;
 
 /**
- *
- * @author mildr
+ * A null or empty piece in a game of chess.
+ * This class provides no additional functionality beyond its superclass,
+ * but is intended to be used as a placeholder for empty spaces on a chess board.
  */
 public class PieceNull extends ChessGamePiece {
     public PieceNull(){
+        super();
     }
     
     public boolean isNull(){

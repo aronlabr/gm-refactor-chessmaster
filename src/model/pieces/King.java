@@ -1,7 +1,5 @@
 package model.pieces;
 
-
-
 import view.ChessGameBoard;
 import javax.swing.ImageIcon;
 import java.util.ArrayList;
@@ -39,27 +37,19 @@ public class King
      *
      * @param board
      *            the game board to calculate moves on
-     * @return ArrayList<String> the moves
+     * @return ArrayList<> the moves
      */
     @Override
     protected ArrayList<String> calculatePossibleMoves( ChessGameBoard board ){
-        ArrayList<String> northEastMoves = calculateNorthEastMoves( board, 1 );
-        ArrayList<String> northWestMoves = calculateNorthWestMoves( board, 1 );
-        ArrayList<String> southEastMoves = calculateSouthEastMoves( board, 1 );
-        ArrayList<String> southWestMoves = calculateSouthWestMoves( board, 1 );
-        ArrayList<String> northMoves = calculateNorthMoves( board, 1 );
-        ArrayList<String> southMoves = calculateSouthMoves( board, 1 );
-        ArrayList<String> eastMoves = calculateEastMoves( board, 1 );
-        ArrayList<String> westMoves = calculateWestMoves( board, 1 );
-        ArrayList<String> allMoves = new ArrayList<String>();
-        allMoves.addAll( northEastMoves );
-        allMoves.addAll( northWestMoves );
-        allMoves.addAll( southWestMoves );
-        allMoves.addAll( southEastMoves );
-        allMoves.addAll( northMoves );
-        allMoves.addAll( southMoves );
-        allMoves.addAll( westMoves );
-        allMoves.addAll( eastMoves );
+        ArrayList<String> allMoves = new ArrayList<>();
+        allMoves.addAll( calculateNorthEastMoves( board, 1 ) );
+        allMoves.addAll( calculateNorthWestMoves( board, 1 ) );
+        allMoves.addAll( calculateSouthWestMoves( board, 1 ) );
+        allMoves.addAll( calculateSouthEastMoves( board, 1 ) );
+        allMoves.addAll( calculateNorthMoves( board, 1 ) );
+        allMoves.addAll( calculateSouthMoves( board, 1 ) );
+        allMoves.addAll( calculateWestMoves( board, 1 ) );
+        allMoves.addAll( calculateEastMoves( board, 1 ) );
         return allMoves;
     }
     /**
@@ -70,7 +60,7 @@ public class King
      * @return true if checked, false if not checked
      */
     public boolean isChecked( ChessGameBoard board ){
-        return getCurrentAttackers( board ).size() > 0;
+        return !getCurrentAttackers( board ).isEmpty();
     }
     /**
      * Creates an icon for this piece depending on the piece's color.

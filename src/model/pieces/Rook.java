@@ -17,7 +17,6 @@ import controller.ChessGamePiece;
  */
 public class Rook
     extends ChessGamePiece{
-    // private ArrayList<String> possibleMoves;
     // ----------------------------------------------------------
     /**
      * Create a new Rook object.
@@ -37,19 +36,15 @@ public class Rook
     /**
      * Calculates the possible moves for this Rook.
      * @param board the board to check on
-     * @return ArrayList<String> the list of moves
+     * @return ArrayList<> the list of moves
      */
     @Override
     protected ArrayList<String> calculatePossibleMoves( ChessGameBoard board ){
-        ArrayList<String> northMoves = calculateNorthMoves( board, 8 );
-        ArrayList<String> southMoves = calculateSouthMoves( board, 8 );
-        ArrayList<String> westMoves = calculateWestMoves( board, 8 );
-        ArrayList<String> eastMoves = calculateEastMoves( board, 8 );
         ArrayList<String> allMoves = new ArrayList<>();
-        allMoves.addAll( northMoves );
-        allMoves.addAll( southMoves );
-        allMoves.addAll( westMoves );
-        allMoves.addAll( eastMoves );
+        allMoves.addAll( calculateNorthMoves( board, 8 ) );
+        allMoves.addAll( calculateSouthMoves( board, 8 ) );
+        allMoves.addAll( calculateWestMoves( board, 8 ) );
+        allMoves.addAll( calculateEastMoves( board, 8 ) );
         return allMoves;
     }
     /**

@@ -6,6 +6,7 @@ import controller.ChessGraveyard;
 import controller.ChessMenuBar;
 import view.ChessGameBoard;
 import java.awt.*;
+import java.io.Serializable;
 import javax.swing.*;
 // -------------------------------------------------------------------------
 /**
@@ -17,13 +18,13 @@ import javax.swing.*;
  * @version 2010.11.17
  */
 public class ChessPanel
-    extends JPanel{
-    private ChessMenuBar    menuBar;
-    private ChessGameBoard  gameBoard;
-    private ChessGameLog    gameLog;
-    private ChessGraveyard  playerOneGraveyard;
-    private ChessGraveyard  playerTwoGraveyard;
-    private ChessGameEngine gameEngine;
+    extends JPanel implements Serializable {
+    private final ChessMenuBar    menuBar;
+    private final ChessGameBoard  gameBoard;
+    private final ChessGameLog    gameLog;
+    private final ChessGraveyard  playerOneGraveyard;
+    private final ChessGraveyard  playerTwoGraveyard;
+    private final transient ChessGameEngine gameEngine;
     // ----------------------------------------------------------
     /**
      * Create a new ChessPanel object.
