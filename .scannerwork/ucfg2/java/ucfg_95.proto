@@ -1,0 +1,53 @@
+
+2GUI.ChessPanel#getGraveyard(I)LGUI/ChessGraveyard;q
+gF:/1_CicloVERANO 2023/Mantenimiento de software/ajedrez/gm-refactor-chessmaster/src/GUI/ChessPanel.javaS S(&"2"3"5*p
+2Tc T(g\
+Z
+Tc T(g
+%0GUI.ChessGraveyard"__id*.
+
+__unknown_file (
+
+%4
+<nulltype>*
+1*î
+3TN T(`t
+r
+TN T(`
+%3GUI.ChessGraveyard"__id*F
+
+__unknown_file (**(
+GUI.ChessPanel"
+playerTwoGraveyardd
+b
+TN T(`
+%0GUI.ChessGraveyard"__id*6
+
+__unknown_file (
+
+%3GUI.ChessGraveyard*
+1*î
+5T$ T(6t
+r
+T$ T(6
+%1GUI.ChessGraveyard"__id*F
+
+__unknown_file (**(
+GUI.ChessPanel"
+playerOneGraveyardd
+b
+T$ T(6
+%0GUI.ChessGraveyard"__id*6
+
+__unknown_file (
+
+%1GUI.ChessGraveyard*
+1*5
+1T T(h"&
+T T(h
+
+%0GUI.ChessGraveyard: 
+
+__unknown_file (
+""B
+GUI.ChessPanelH

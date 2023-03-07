@@ -1,0 +1,3 @@
+GUI.BoardSquare#updateImage()V
+javax.swing.JLabel#instance-init#
+javax.swing.JLabel#<init>()V

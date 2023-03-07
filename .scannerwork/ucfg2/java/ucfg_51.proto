@@ -1,0 +1,135 @@
+
+%GUI.ChessGameEngine#isKingInCheck(Z)Zx
+lF:/1_CicloVERANO 2023/Mantenimiento de software/ajedrez/gm-refactor-chessmaster/src/GUI/ChessGameEngine.java† †( "2"4"5"1*×
+2
+ (g
+e
+
+ (
+%6Piezas.King"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+king1n
+l
+
+( (-
+%7GUI.ChessGameBoard"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+boardÖÓ
+
+ (/
+%8boolean",Piezas.King#isChecked(LGUI/ChessGameBoard;)Z*/
+
+__unknown_file (
+
+%6Piezas.King*6
+
+__unknown_file (
+
+%7GUI.ChessGameBoard2isChecked(LGUI/ChessGameBoard;)"
+
+ (0
+""*×
+4
+‹ ‹(g
+e
+
+‹ ‹(
+%3Piezas.King"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+king2n
+l
+
+‹$ ‹()
+%4GUI.ChessGameBoard"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+boardÖÓ
+
+‹ ‹(+
+%5boolean",Piezas.King#isChecked(LGUI/ChessGameBoard;)Z*/
+
+__unknown_file (
+
+%3Piezas.King*6
+
+__unknown_file (
+
+%4GUI.ChessGameBoard2isChecked(LGUI/ChessGameBoard;)"
+
+‹ ‹(,
+""*×
+5
+‰ ‰(g
+e
+
+‰ ‰(
+%0Piezas.King"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+king1n
+l
+
+‰( ‰(-
+%1GUI.ChessGameBoard"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+boardÖÓ
+
+‰ ‰(/
+%2boolean",Piezas.King#isChecked(LGUI/ChessGameBoard;)Z*/
+
+__unknown_file (
+
+%0Piezas.King*6
+
+__unknown_file (
+
+%1GUI.ChessGameBoard2isChecked(LGUI/ChessGameBoard;)"
+
+‰ ‰(0
+""*Ú
+1
+’ ’(g
+e
+
+’ ’(
+%9Piezas.King"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+king2o
+m
+
+’$ ’()
+%10GUI.ChessGameBoard"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+boardØÕ
+
+’ ’(+
+%11boolean",Piezas.King#isChecked(LGUI/ChessGameBoard;)Z*/
+
+__unknown_file (
+
+%9Piezas.King*7
+
+__unknown_file (
+
+%10GUI.ChessGameBoard2isChecked(LGUI/ChessGameBoard;)"
+
+’ ’(,
+"": 
+
+__unknown_file (
+""B
+GUI.ChessGameEngineHP

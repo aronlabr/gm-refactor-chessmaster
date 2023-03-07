@@ -1,0 +1,15 @@
+GUI.ChessGameBoard#createBoardSquare(II)V
+Piezas.King#instance-init#
+Piezas.Knight#instance-init#
+Piezas.Queen#<init>(LGUI/ChessGameBoard;III)V
+Piezas.King#<init>(LGUI/ChessGameBoard;III)V
+Piezas.Queen#instance-init#
+Piezas.Pawn#<init>(LGUI/ChessGameBoard;III)V
+Piezas.Knight#<init>(LGUI/ChessGameBoard;III)V
+Piezas.Bishop#<init>(LGUI/ChessGameBoard;III)V
+Piezas.Rook#instance-init#
+GUI.BoardSquare#instance-init#
+GUI.BoardSquare#<init>(IILGUI/ChessGamePiece;)V
+Piezas.Rook#<init>(LGUI/ChessGameBoard;III)V
+Piezas.Bishop#instance-init#
+Piezas.Pawn#instance-init#

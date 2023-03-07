@@ -1,0 +1,250 @@
+
+(GUI.ChessGameEngine#determineGameLost()Ix
+lF:/1_CicloVERANO 2023/Mantenimiento de software/ajedrez/gm-refactor-chessmaster/src/GUI/ChessGameEngine.javaÒ Ò( "14*×
+13
+Ó* Ó(=º·
+
+Ó* Ó(B
+%3boolean"+GUI.ChessGameEngine#playerHasLegalMoves(I)Z*3
+
+__unknown_file (
+GUI.ChessGameEngine* 
+
+__unknown_file (22playerHasLegalMoves(I)*
+11
+12*Ì
+14
+Ó Ó(g
+e
+
+Ó Ó(
+%0Piezas.King"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+king1n
+l
+
+Ó Ó(#
+%1GUI.ChessGameBoard"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+boardÖÓ
+
+Ó Ó(%
+%2boolean",Piezas.King#isChecked(LGUI/ChessGameBoard;)Z*/
+
+__unknown_file (
+
+%0Piezas.King*6
+
+__unknown_file (
+
+%1GUI.ChessGameBoard2isChecked(LGUI/ChessGameBoard;)*
+13
+11*%
+1
+ä ä("
+
+ä ä(
+""*%
+2
+â â("
+
+â â(
+""*¼
+3
+à à(o
+m
+
+à à(
+%19GUI.ChessGameBoard"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+board¶³
+
+à à()
+%20java.util.ArrayList";GUI.ChessGameBoard#getAllBlackPieces()Ljava/util/ArrayList;*7
+
+__unknown_file (
+
+%19GUI.ChessGameBoard2getAllBlackPieces()yw
+
+à à(0
+
+%21int"java.util.ArrayList#size()I*8
+
+__unknown_file (
+
+%20java.util.ArrayList2size()*
+2
+1*¼
+4
+ß ß(o
+m
+
+ß ß(
+%16GUI.ChessGameBoard"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+board¶³
+
+ß ß(*
+%17java.util.ArrayList";GUI.ChessGameBoard#getAllWhitePieces()Ljava/util/ArrayList;*7
+
+__unknown_file (
+
+%16GUI.ChessGameBoard2getAllWhitePieces()yw
+
+ß ß(1
+
+%18int"java.util.ArrayList#size()I*8
+
+__unknown_file (
+
+%17java.util.ArrayList2size()*
+3
+1*Õ
+5
+Þ/ Þ(B»¸
+
+Þ/ Þ(G
+%15boolean"+GUI.ChessGameEngine#playerHasLegalMoves(I)Z*3
+
+__unknown_file (
+GUI.ChessGameEngine* 
+
+__unknown_file (22playerHasLegalMoves(I)*
+2
+4*Î
+6
+Þ Þ(h
+f
+
+Þ Þ(
+%12Piezas.King"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+king2o
+m
+
+Þ# Þ((
+%13GUI.ChessGameBoard"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+boardÙÖ
+
+Þ Þ(*
+%14boolean",Piezas.King#isChecked(LGUI/ChessGameBoard;)Z*0
+
+__unknown_file (
+
+%12Piezas.King*7
+
+__unknown_file (
+
+%13GUI.ChessGameBoard2isChecked(LGUI/ChessGameBoard;)*
+4
+5*Õ
+7
+Ý- Ý(@»¸
+
+Ý- Ý(E
+%11boolean"+GUI.ChessGameEngine#playerHasLegalMoves(I)Z*3
+
+__unknown_file (
+GUI.ChessGameEngine* 
+
+__unknown_file (22playerHasLegalMoves(I)*
+2
+6*Ê
+8
+Ý Ý(g
+e
+
+Ý Ý(
+%8Piezas.King"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+king1n
+l
+
+Ý! Ý(&
+%9GUI.ChessGameBoard"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+board×Ô
+
+Ý Ý((
+%10boolean",Piezas.King#isChecked(LGUI/ChessGameBoard;)Z*/
+
+__unknown_file (
+
+%8Piezas.King*6
+
+__unknown_file (
+
+%9GUI.ChessGameBoard2isChecked(LGUI/ChessGameBoard;)*
+6
+7*%
+9
+Û Û("
+
+Û Û(
+""*Õ
+10
+Ø* Ø(=º·
+
+Ø* Ø(B
+%7boolean"+GUI.ChessGameEngine#playerHasLegalMoves(I)Z*3
+
+__unknown_file (
+GUI.ChessGameEngine* 
+
+__unknown_file (22playerHasLegalMoves(I)*
+8
+9*Ë
+11
+Ø Ø(g
+e
+
+Ø Ø(
+%4Piezas.King"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+king2n
+l
+
+Ø Ø(#
+%5GUI.ChessGameBoard"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+boardÖÓ
+
+Ø Ø(%
+%6boolean",Piezas.King#isChecked(LGUI/ChessGameBoard;)Z*/
+
+__unknown_file (
+
+%4Piezas.King*6
+
+__unknown_file (
+
+%5GUI.ChessGameBoard2isChecked(LGUI/ChessGameBoard;)*
+8
+10*&
+12
+Ö Ö("
+
+Ö Ö(
+""B
+GUI.ChessGameEngineHP

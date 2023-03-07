@@ -1,0 +1,24 @@
+
+,Piezas.King#isChecked(LGUI/ChessGameBoard;)Zn
+dF:/1_CicloVERANO 2023/Mantenimiento de software/ajedrez/gm-refactor-chessmaster/src/Piezas/King.javaG G("1*©
+1H H("Ž‹
+H H(+
+%0java.util.ArrayList"QGUI.ChessGamePiece#getCurrentAttackers(LGUI/ChessGameBoard;)Ljava/util/ArrayList;*+
+
+__unknown_file (
+Piezas.King*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard2)getCurrentAttackers(LGUI/ChessGameBoard;)us
+H H(2	
+%1int"java.util.ArrayList#size()I*7
+
+__unknown_file (
+
+%0java.util.ArrayList2size()"
+H H(7
+"":'
+G G(2
+boardGUI.ChessGameBoardB
+Piezas.KingHP

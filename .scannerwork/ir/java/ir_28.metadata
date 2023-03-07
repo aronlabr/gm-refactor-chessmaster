@@ -1,0 +1,2 @@
+GUI.ChessGamePiece#canMove(LGUI/ChessGameBoard;II)Z
+GUI.ChessGamePiece#testMoveForKingSafety(LGUI/ChessGameBoard;II)Z

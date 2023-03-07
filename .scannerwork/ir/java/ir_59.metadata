@@ -1,0 +1,4 @@
+GUI.ChessGameEngine#checkGameConditions()V
+javax.swing.JOptionPane#showMessageDialog(Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)V
+GUI.ChessGameEngine#nextTurn()V
+GUI.ChessGameEngine#askUserToPlayAgain(Ljava/lang/String;)V

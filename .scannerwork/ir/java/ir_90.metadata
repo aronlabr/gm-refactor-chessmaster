@@ -1,0 +1,2 @@
+GUI.BoardSquare#<init>(IILGUI/ChessGamePiece;)V
+GUI.BoardSquare#updateImage()V

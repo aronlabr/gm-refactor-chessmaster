@@ -1,0 +1,128 @@
+
+=Piezas.Knight#createImageByPieceType()Ljavax/swing/ImageIcon;p
+fF:/1_CicloVERANO 2023/Mantenimiento de software/ajedrez/gm-refactor-chessmaster/src/Piezas/Knight.javah h(+"5*¹
+2p p(Š
+p p(
+%8java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*-
+
+__unknown_file (
+Piezas.Knight2
+getClass()öó
+p p(H
+%9java.net.URL"=java.lang.Class#getResource(Ljava/lang/String;)Ljava/net/URL;*3
+
+__unknown_file (
+
+%8java.lang.Class*>
+
+__unknown_file (" 
+../chessImages/BlackKnight.gif2getResource(Ljava/lang/String;)A?
+o o( 
+%10javax.swing.ImageIcon"javax.swing.ImageIcon±
+®
+o q(
+%11"-javax.swing.ImageIcon#<init>(Ljava/net/URL;)V*:
+
+__unknown_file (
+
+%10javax.swing.ImageIcon*0
+
+__unknown_file (
+
+%9java.net.URL"*
+o q(
+
+%10javax.swing.ImageIcon*Û
+3n n(!€~
+n n(#	
+%6int"%GUI.ChessGamePiece#getColorOfPiece()I*-
+
+__unknown_file (
+Piezas.Knight2getColorOfPiece()A
+?
+n' n(;	
+%7int"__id*"
+
+__unknown_file (
+""*
+2
+1*µ
+4k k(Š
+k k(
+%2java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*-
+
+__unknown_file (
+Piezas.Knight2
+getClass()öó
+k k(H
+%3java.net.URL"=java.lang.Class#getResource(Ljava/lang/String;)Ljava/net/URL;*3
+
+__unknown_file (
+
+%2java.lang.Class*>
+
+__unknown_file (" 
+../chessImages/WhiteKnight.gif2getResource(Ljava/lang/String;)@>
+j j( 
+%4javax.swing.ImageIcon"javax.swing.ImageIcon¯
+¬
+j l(
+%5"-javax.swing.ImageIcon#<init>(Ljava/net/URL;)V*9
+
+__unknown_file (
+
+%4javax.swing.ImageIcon*0
+
+__unknown_file (
+
+%3java.net.URL")
+j l(
+
+%4javax.swing.ImageIcon*Û
+5i i(€~
+i i(	
+%0int"%GUI.ChessGamePiece#getColorOfPiece()I*-
+
+__unknown_file (
+Piezas.Knight2getColorOfPiece()A
+?
+i" i(6	
+%1int"__id*"
+
+__unknown_file (
+""*
+3
+4*Ä
+1v v(Ž‹
+v v(
+%12java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*-
+
+__unknown_file (
+Piezas.Knight2
+getClass()ÿü
+v v(O
+%13java.net.URL"=java.lang.Class#getResource(Ljava/lang/String;)Ljava/net/URL;*4
+
+__unknown_file (
+
+%12java.lang.Class*E
+
+__unknown_file ()'
+%../chessImages/default-Unassigned.gif2getResource(Ljava/lang/String;)A?
+u u( 
+%14javax.swing.ImageIcon"javax.swing.ImageIcon²
+¯
+u w(
+%15"-javax.swing.ImageIcon#<init>(Ljava/net/URL;)V*:
+
+__unknown_file (
+
+%14javax.swing.ImageIcon*1
+
+__unknown_file (
+
+%13java.net.URL"*
+u w(
+
+%14javax.swing.ImageIconB
+Piezas.KnightH

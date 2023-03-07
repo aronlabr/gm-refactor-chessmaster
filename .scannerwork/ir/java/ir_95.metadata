@@ -1,0 +1,2 @@
+GUI.BoardSquare#setPieceOnSquare(LGUI/ChessGamePiece;)V
+GUI.BoardSquare#updateImage()V
