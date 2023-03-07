@@ -1,0 +1,5 @@
+Piezas.Knight#calculatePossibleMoves(LGUI/ChessGameBoard;)Ljava/util/ArrayList;
+java.util.ArrayList#<init>()V
+java.util.ArrayList#instance-init#
+Piezas.Knight#calculateSouthMoves(LGUI/ChessGameBoard;)Ljava/util/ArrayList;
+Piezas.Knight#calculateNorthMoves(LGUI/ChessGameBoard;)Ljava/util/ArrayList;

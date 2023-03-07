@@ -1,0 +1,75 @@
+
+/GUI.ChessGameLog#getLastLog()Ljava/lang/String;s
+iF:/1_CicloVERANO 2023/Mantenimiento de software/ajedrez/gm-refactor-chessmaster/src/GUI/ChessGameLog.java@ @("3*Ï
+2C C(o
+m
+C C(
+%3javax.swing.JTextArea"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameLog"
+
+textArea¨¥
+C C(%
+%4java.lang.String";javax.swing.text.JTextComponent#getText()Ljava/lang/String;*9
+
+__unknown_file (
+
+%3javax.swing.JTextArea2	getText()"$
+C C(&
+
+%4java.lang.String*ú
+3A! A()o
+m
+A! A()
+%0javax.swing.JTextArea"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameLog"
+
+textArea¨¥
+A! A(3
+%1java.lang.String";javax.swing.text.JTextComponent#getText()Ljava/lang/String;*9
+
+__unknown_file (
+
+%0javax.swing.JTextArea2	getText()ÆÃ
+A! A(G	
+%2int"1java.lang.String#lastIndexOf(Ljava/lang/String;)I*4
+
+__unknown_file (
+
+%1java.lang.String*"
+
+__unknown_file (
+\n2lastIndexOf(Ljava/lang/String;)*
+2
+1*
+1E E(o
+m
+E E(
+%5javax.swing.JTextArea"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameLog"
+
+textArea¨¥
+E E(!
+%6java.lang.String";javax.swing.text.JTextComponent#getText()Ljava/lang/String;*9
+
+__unknown_file (
+
+%5javax.swing.JTextArea2	getText()¾»
+E E(E
+%7java.lang.String"/java.lang.String#substring(I)Ljava/lang/String;*4
+
+__unknown_file (
+
+%6java.lang.String*"
+
+__unknown_file (
+""2substring(I)"$
+E E(F
+
+%7java.lang.StringB
+GUI.ChessGameLogH

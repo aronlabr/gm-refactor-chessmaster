@@ -1,0 +1,373 @@
+
+0GUI.ChessGamePiece#move(LGUI/ChessGameBoard;II)Zw
+kF:/1_CicloVERANO 2023/Mantenimiento de software/ajedrez/gm-refactor-chessmaster/src/GUI/ChessGamePiece.java¼ ¼("10*%
+2
+Ò Ò("
+
+Ò Ò(
+""*Œ
+3
+Ð Ð(#õò
+
+Ð Ð(*
+%26void"=GUI.ChessGamePiece#updatePossibleMoves(LGUI/ChessGameBoard;)V*2
+
+__unknown_file (
+GUI.ChessGamePiece*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard2)updatePossibleMoves(LGUI/ChessGameBoard;)*
+2*™
+4
+Ë Ë(ØÕ
+
+Ë Ë(&
+%15void"(GUI.ChessGamePiece#setPieceLocation(II)V*2
+
+__unknown_file (
+GUI.ChessGamePiece*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""2setPieceLocation(II)]
+[
+
+Ì Ì(!
+%16java.lang.String"__concat*
+
+Ì Ì(
+ (*
+
+Ì Ì(!
+""p
+n
+
+Ì Ì((
+%17java.lang.String"__concat*'
+
+Ì Ì(!
+
+%16java.lang.String*
+
+Ì$ Ì((
+, p
+n
+
+Ì Ì(.
+%18java.lang.String"__concat*'
+
+Ì Ì((
+
+%17java.lang.String*
+
+Ì+ Ì(.
+""o
+m
+
+Ì Ì(4
+%19java.lang.String"__concat*'
+
+Ì Ì(.
+
+%18java.lang.String*
+
+Ì1 Ì(4
+)ˆ
+…
+
+Ì Ì(4
+%20java.lang.String"__concat*+
+
+Ì Ì(4
+
+moveLogjava.lang.String*'
+
+Ì Ì(4
+
+%19java.lang.Stringh
+f
+
+Ì Ì(4
+moveLogjava.lang.String"__id*5
+
+__unknown_file (
+
+%20java.lang.String¦£
+
+Í Í(+
+%21java.awt.Container"2java.awt.Component#getParent()Ljava/awt/Container;*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard2getParent()ž›
+
+Í Í(9
+%22GUI.ChessGameLog"-GUI.ChessPanel#getGameLog()LGUI/ChessGameLog;*7
+
+__unknown_file (
+
+%21java.awt.Container2getGameLog()ÜÙ
+
+Í Í(K
+%23void".GUI.ChessGameLog#addToLog(Ljava/lang/String;)V*5
+
+__unknown_file (
+
+%22GUI.ChessGameLog*9
+
+__unknown_file (
+
+moveLogjava.lang.String2addToLog(Ljava/lang/String;)èå
+
+Î Î(#
+%24GUI.BoardSquare"/GUI.ChessGameBoard#getCell(II)LGUI/BoardSquare;*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""2getCell(II)çä
+
+Î Î(:
+%25void"7GUI.BoardSquare#setPieceOnSquare(LGUI/ChessGamePiece;)V*4
+
+__unknown_file (
+
+%24GUI.BoardSquare*2
+
+__unknown_file (
+GUI.ChessGamePiece2&setPieceOnSquare(LGUI/ChessGamePiece;)*
+2
+3*™
+5
+È È(èå
+
+É É(/
+%12GUI.BoardSquare"/GUI.ChessGameBoard#getCell(II)LGUI/BoardSquare;*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""2getCell(II)¬©
+
+É É(B
+%13GUI.ChessGamePiece"6GUI.BoardSquare#getPieceOnSquare()LGUI/ChessGamePiece;*4
+
+__unknown_file (
+
+%12GUI.BoardSquare2getPieceOnSquare()èå
+
+È É(C
+%14void"2GUI.ChessGraveyard#addPiece(LGUI/ChessGamePiece;)V*=
+
+__unknown_file (!
+
+	graveyardGUI.ChessGraveyard*7
+
+__unknown_file (
+
+%13GUI.ChessGamePiece2addPiece(LGUI/ChessGamePiece;)*
+4*ú
+6
+Æ. Æ(3¦£
+
+Æ. Æ(?
+%10java.awt.Container"2java.awt.Component#getParent()Ljava/awt/Container;*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard2getParent()ÊÇ
+
+Æ  Æ(P
+%11GUI.ChessGraveyard"2GUI.ChessPanel#getGraveyard(I)LGUI/ChessGraveyard;*7
+
+__unknown_file (
+
+%10java.awt.Container* 
+
+__unknown_file (22getGraveyard(I)n
+l
+
+Æ Æ(P
+	graveyardGUI.ChessGraveyard"__id*7
+
+__unknown_file (
+
+%11GUI.ChessGraveyard*
+5*ö
+7
+Ä. Ä(3¥¢
+
+Ä. Ä(?
+%8java.awt.Container"2java.awt.Component#getParent()Ljava/awt/Container;*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard2getParent()ÈÅ
+
+Ä  Ä(P
+%9GUI.ChessGraveyard"2GUI.ChessPanel#getGraveyard(I)LGUI/ChessGraveyard;*6
+
+__unknown_file (
+
+%8java.awt.Container* 
+
+__unknown_file (22getGraveyard(I)m
+k
+
+Ä Ä(P
+	graveyardGUI.ChessGraveyard"__id*6
+
+__unknown_file (
+
+%9GUI.ChessGraveyard*
+5*Ò
+8
+Á Á()Y
+W
+
+Á Á()
+	graveyardGUI.ChessGraveyard"__id*"
+
+__unknown_file (
+""¥¢
+
+Â; Â(L
+%5java.awt.Container"2java.awt.Component#getParent()Ljava/awt/Container;*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard2getParent()¨¥
+
+Â- Â(]
+%6GUI.ChessGameEngine"3GUI.ChessPanel#getGameEngine()LGUI/ChessGameEngine;*6
+
+__unknown_file (
+
+%5java.awt.Container2getGameEngine()p
+n
+
+Â Â(^!
+
+gameEngineGUI.ChessGameEngine"__id*7
+
+__unknown_file (
+
+%6GUI.ChessGameEngine˜•
+
+Ã Ã(1	
+%7int"'GUI.ChessGameEngine#getCurrentPlayer()I*?
+
+__unknown_file (#
+!
+
+gameEngineGUI.ChessGameEngine2getCurrentPlayer()*
+6
+7*Ž
+9
+¾ ¾(!˜•
+
+¾ ¾(,
+%1java.lang.String"/GUI.ChessGamePiece#toString()Ljava/lang/String;*2
+
+__unknown_file (
+GUI.ChessGamePiece2
+toString()p
+n
+
+¾ ¾(5
+%2java.lang.String"__concat*&
+
+¾ ¾(,
+
+%1java.lang.String*
+
+¾/ ¾(5
+ -> g
+e
+
+¾ ¾(6
+moveLogjava.lang.String"__id*4
+
+__unknown_file (
+
+%2java.lang.StringÐÍ
+
+¿ ¿(2
+
+%3void"!GUI.ChessGameBoard#clearCell(II)V*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""2clearCell(II)«¨
+
+À À((
+%4boolean"3GUI.ChessGamePiece#isEnemy(LGUI/ChessGameBoard;II)Z*2
+
+__unknown_file (
+GUI.ChessGamePiece*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""2isEnemy(LGUI/ChessGameBoard;II)*
+4
+8*Æ
+10
+½ ½(«¨
+
+½ ½($
+%0boolean"3GUI.ChessGamePiece#canMove(LGUI/ChessGameBoard;II)Z*2
+
+__unknown_file (
+GUI.ChessGamePiece*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""2canMove(LGUI/ChessGameBoard;II)*
+9
+1*%
+1
+Ô Ô("
+
+Ô Ô(
+"":)
+
+¼ ¼(-
+boardGUI.ChessGameBoard: 
+
+__unknown_file (
+"": 
+
+__unknown_file (
+""B
+GUI.ChessGamePieceHP

@@ -1,0 +1,3 @@
+GUI.ChessGraveyard#addPiece(LGUI/ChessGamePiece;)V
+javax.swing.JLabel#instance-init#
+javax.swing.JLabel#<init>()V

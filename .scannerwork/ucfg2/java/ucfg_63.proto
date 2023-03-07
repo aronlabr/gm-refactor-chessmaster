@@ -1,0 +1,128 @@
+
+=Piezas.Bishop#createImageByPieceType()Ljavax/swing/ImageIcon;p
+fF:/1_CicloVERANO 2023/Mantenimiento de software/ajedrez/gm-refactor-chessmaster/src/Piezas/Bishop.java? ?(+"5*¹
+2E E(Š
+E E(
+%8java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*-
+
+__unknown_file (
+Piezas.Bishop2
+getClass()öó
+E E(L
+%9java.net.URL"=java.lang.Class#getResource(Ljava/lang/String;)Ljava/net/URL;*3
+
+__unknown_file (
+
+%8java.lang.Class*>
+
+__unknown_file (" 
+../chessImages/BlackBishop.gif2getResource(Ljava/lang/String;)A?
+D D( 
+%10javax.swing.ImageIcon"javax.swing.ImageIcon±
+®
+D E(M
+%11"-javax.swing.ImageIcon#<init>(Ljava/net/URL;)V*:
+
+__unknown_file (
+
+%10javax.swing.ImageIcon*0
+
+__unknown_file (
+
+%9java.net.URL"*
+D E(N
+
+%10javax.swing.ImageIcon*Û
+3C C("€~
+C C($	
+%6int"%GUI.ChessGamePiece#getColorOfPiece()I*-
+
+__unknown_file (
+Piezas.Bishop2getColorOfPiece()A
+?
+C( C(<	
+%7int"__id*"
+
+__unknown_file (
+""*
+2
+1*µ
+4B B(Š
+B B(
+%2java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*-
+
+__unknown_file (
+Piezas.Bishop2
+getClass()öó
+B B(L
+%3java.net.URL"=java.lang.Class#getResource(Ljava/lang/String;)Ljava/net/URL;*3
+
+__unknown_file (
+
+%2java.lang.Class*>
+
+__unknown_file (" 
+../chessImages/WhiteBishop.gif2getResource(Ljava/lang/String;)@>
+A A( 
+%4javax.swing.ImageIcon"javax.swing.ImageIcon¯
+¬
+A B(M
+%5"-javax.swing.ImageIcon#<init>(Ljava/net/URL;)V*9
+
+__unknown_file (
+
+%4javax.swing.ImageIcon*0
+
+__unknown_file (
+
+%3java.net.URL")
+A B(N
+
+%4javax.swing.ImageIcon*Û
+5@ @(€~
+@ @(	
+%0int"%GUI.ChessGamePiece#getColorOfPiece()I*-
+
+__unknown_file (
+Piezas.Bishop2getColorOfPiece()A
+?
+@! @(5	
+%1int"__id*"
+
+__unknown_file (
+""*
+3
+4*½
+1H H(Ž‹
+H H(
+%12java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*-
+
+__unknown_file (
+Piezas.Bishop2
+getClass()øõ
+H H(L
+%13java.net.URL"=java.lang.Class#getResource(Ljava/lang/String;)Ljava/net/URL;*4
+
+__unknown_file (
+
+%12java.lang.Class*>
+
+__unknown_file (" 
+../chessImages/BlackBishop.gif2getResource(Ljava/lang/String;)A?
+G G( 
+%14javax.swing.ImageIcon"javax.swing.ImageIcon²
+¯
+G H(M
+%15"-javax.swing.ImageIcon#<init>(Ljava/net/URL;)V*:
+
+__unknown_file (
+
+%14javax.swing.ImageIcon*1
+
+__unknown_file (
+
+%13java.net.URL"*
+G H(N
+
+%14javax.swing.ImageIconB
+Piezas.BishopH

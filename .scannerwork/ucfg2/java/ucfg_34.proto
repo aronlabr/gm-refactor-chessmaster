@@ -1,0 +1,220 @@
+
+3GUI.ChessGamePiece#isEnemy(LGUI/ChessGameBoard;II)Zw
+kF:/1_CicloVERANO 2023/Mantenimiento de software/ajedrez/gm-refactor-chessmaster/src/GUI/ChessGamePiece.javaþ þ("14"15*v
+13
+ƒ ƒ(^
+\
+
+ƒ ƒ(
+%2GUI.ChessGamePiece"__id*.
+
+__unknown_file (
+
+%3
+<nulltype>*
+11*±
+14
+‚$ ‚()çä
+
+‚$ ‚(;
+%0GUI.BoardSquare"/GUI.ChessGameBoard#getCell(II)LGUI/BoardSquare;*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""2getCell(II)ª§
+
+‚$ ‚(N
+%1GUI.ChessGamePiece"6GUI.BoardSquare#getPieceOnSquare()LGUI/ChessGamePiece;*3
+
+__unknown_file (
+
+%0GUI.BoardSquare2getPieceOnSquare()*
+13
+12*&
+15
+€ €("
+
+€ €(
+""*%
+1
+” ”("
+
+” ”(
+""*%
+2
+’ ’("
+
+’ ’(
+""*õ
+3
+‘ ‘(•’
+
+‘ ‘(,
+
+%14int"%GUI.ChessGamePiece#getColorOfPiece()I*>
+
+__unknown_file ("
+ 
+
+enemyPieceGUI.ChessGamePiece2getColorOfPiece()D
+B
+
+‘0 ‘(D
+
+%15int"__id*"
+
+__unknown_file (
+""*
+2
+1*%
+4
+Ž Ž("
+
+Ž Ž(
+""*%
+5
+Œ Œ("
+
+Œ Œ(
+""*õ
+6
+‹ ‹(•’
+
+‹ ‹(,
+
+%12int"%GUI.ChessGamePiece#getColorOfPiece()I*>
+
+__unknown_file ("
+ 
+
+enemyPieceGUI.ChessGamePiece2getColorOfPiece()D
+B
+
+‹0 ‹(D
+
+%13int"__id*"
+
+__unknown_file (
+""*
+4
+5*é
+7
+Š Š(‰†
+
+Š Š("
+
+%10int"%GUI.ChessGamePiece#getColorOfPiece()I*2
+
+__unknown_file (
+GUI.ChessGamePiece2getColorOfPiece()D
+B
+
+Š& Š(:
+
+%11int"__id*"
+
+__unknown_file (
+""*
+3
+6*%
+8
+ˆ ˆ("
+
+ˆ ˆ(
+""*ó
+9
+‡ ‡(”‘
+
+‡ ‡(/	
+%8int"%GUI.ChessGamePiece#getColorOfPiece()I*>
+
+__unknown_file ("
+ 
+
+enemyPieceGUI.ChessGamePiece2getColorOfPiece()C
+A
+
+‡3 ‡(L	
+%9int"__id*"
+
+__unknown_file (
+""*
+7
+8*è
+10
+† †(ˆ…
+
+† †()	
+%6int"%GUI.ChessGamePiece#getColorOfPiece()I*2
+
+__unknown_file (
+GUI.ChessGamePiece2getColorOfPiece()C
+A
+
+†- †(F	
+%7int"__id*"
+
+__unknown_file (
+""*
+8
+9*‰
+11
+‚ „(=n
+l
+
+‚ „(= 
+
+enemyPieceGUI.ChessGamePiece"__id*6
+
+__unknown_file (
+
+%2GUI.ChessGamePiece*
+8
+10*•
+12
+„ „(çä
+
+„ „()
+%5GUI.BoardSquare"/GUI.ChessGameBoard#getCell(II)LGUI/BoardSquare;*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""2getCell(II)ª§
+
+„ „(<
+%4GUI.ChessGamePiece"6GUI.BoardSquare#getPieceOnSquare()LGUI/ChessGamePiece;*3
+
+__unknown_file (
+
+%5GUI.BoardSquare2getPieceOnSquare()f
+d
+
+„ „(<
+%2GUI.ChessGamePiece"__id*6
+
+__unknown_file (
+
+%4GUI.ChessGamePiece*
+11:)
+
+þ þ(0
+boardGUI.ChessGameBoard: 
+
+__unknown_file (
+"": 
+
+__unknown_file (
+""B
+GUI.ChessGamePieceHP

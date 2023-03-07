@@ -1,0 +1,3 @@
+GUI.ChessGameEngine#determineActionFromSquareClick(Ljava/awt/event/MouseEvent;)V
+GUI.ChessGameEngine#handleSecondClick(LGUI/BoardSquare;LGUI/ChessGamePiece;)V
+GUI.ChessGameEngine#handleFirstClick(LGUI/BoardSquare;)V

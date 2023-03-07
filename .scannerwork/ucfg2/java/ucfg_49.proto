@@ -1,0 +1,110 @@
+
++GUI.ChessGameEngine#playerHasLegalMoves(I)Zv
+lF:/1_CicloVERANO 2023/Mantenimiento de software/ajedrez/gm-refactor-chessmaster/src/GUI/ChessGameEngine.javaY Y(&"10*Œ
+2e e(&W
+U
+e e(&
+	currPieceGUI.ChessGamePiece"__id*"
+
+__unknown_file (
+""›
+˜
+e e(&
+	currPieceGUI.ChessGamePiece"
+__arrayGet*;
+
+__unknown_file (
+
+piecesjava.util.ArrayList*"
+
+__unknown_file (
+""*
+4
+1*!
+3g g("
+g g(
+""*÷
+4f f(l
+j
+f* f(/
+%4GUI.ChessGameBoard"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+boardñî
+f f(1
+%5boolean"7GUI.ChessGamePiece#hasLegalMoves(LGUI/ChessGameBoard;)Z*=
+
+__unknown_file (!
+
+	currPieceGUI.ChessGamePiece*6
+
+__unknown_file (
+
+%4GUI.ChessGameBoard2#hasLegalMoves(LGUI/ChessGameBoard;)*
+2
+3*!
+6c c("
+c c(
+""*¡
+7_ _(l
+j
+_ _(
+%2GUI.ChessGameBoard"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+board²¯
+_ _(.
+%3java.util.ArrayList";GUI.ChessGameBoard#getAllBlackPieces()Ljava/util/ArrayList;*6
+
+__unknown_file (
+
+%2GUI.ChessGameBoard2getAllBlackPieces()j
+h
+_ _(.
+piecesjava.util.ArrayList"__id*7
+
+__unknown_file (
+
+%3java.util.ArrayList*
+2*¡
+9\ \(l
+j
+\ \(
+%0GUI.ChessGameBoard"__id*>
+
+__unknown_file ("* 
+GUI.ChessGameEngine"
+board²¯
+\ \(.
+%1java.util.ArrayList";GUI.ChessGameBoard#getAllWhitePieces()Ljava/util/ArrayList;*6
+
+__unknown_file (
+
+%0GUI.ChessGameBoard2getAllWhitePieces()j
+h
+\ \(.
+piecesjava.util.ArrayList"__id*7
+
+__unknown_file (
+
+%1java.util.ArrayList*
+2*p
+10Z Z()U
+S
+Z Z()
+piecesjava.util.ArrayList"__id*"
+
+__unknown_file (
+""*	
+6
+7
+9*!
+1j j("
+j j(
+"": 
+
+__unknown_file (
+""B
+GUI.ChessGameEngineHP

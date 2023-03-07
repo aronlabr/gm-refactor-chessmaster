@@ -2,12 +2,11 @@ package GUI;
 import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
 import java.util.Date;
-
+import javax.swing.ScrollPaneConstants;
 
 import org.junit.*;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 // -------------------------------------------------------------------------
 /**
  * A scrollable textArea representing the game log. (i.e. moves made by each
@@ -28,8 +27,8 @@ public class ChessGameLog
     public ChessGameLog(){
         super(
             new JTextArea( "", 5, 30 ),
-            JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,
-            JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS );
+            ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
+            ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS );
         textArea = ( (JTextArea)this.getViewport().getView() );
     }
     // ----------------------------------------------------------
@@ -69,9 +68,12 @@ public class ChessGameLog
         return textArea.getText().substring( indexOfLastNewLine + 1 );
     }
 
-    /**
-     * Tests the ChessGameLog class.
-     */
+    // Se usa para probar la clase ChessGameLog
+    // La clase ChessGameLog tiene las siguientes funciones:
+    // addToLog(String s): agrega la cadena s al registro
+    // getLastLog(): Devuelve la última cadena agregada al registro
+    // clearLog(): Borra el registro
+
     @Test
     public void testChessGameLog(){
         ChessGameLog log = new ChessGameLog();

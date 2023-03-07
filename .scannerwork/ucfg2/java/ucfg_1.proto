@@ -1,0 +1,154 @@
+
+)Piezas.Pawn#move(LGUI/ChessGameBoard;II)Zn
+dF:/1_CicloVERANO 2023/Mantenimiento de software/ajedrez/gm-refactor-chessmaster/src/Piezas/Pawn.java4 4("startingBlock*!
+2@ @("
+@ @(
+""*≤
+3: :(Â‚
+: :()
+%6GUI.BoardSquare"/GUI.ChessGameBoard#getCell(II)LGUI/BoardSquare;*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""2getCell(II)~|
+> >(%	
+%7int"%GUI.ChessGamePiece#getColorOfPiece()I*+
+
+__unknown_file (
+Piezas.Pawn2getColorOfPiece().,
+:@ :(E
+%8Piezas.Queen"Piezas.Queen†
+ù
+:< >('
+%9"-Piezas.Queen#<init>(LGUI/ChessGameBoard;III)V*0
+
+__unknown_file (
+
+%8Piezas.Queen*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""*'
+
+__unknown_file (
+	
+%7int‚ﬂ
+: >()
+%10void"7GUI.BoardSquare#setPieceOnSquare(LGUI/ChessGamePiece;)V*3
+
+__unknown_file (
+
+%6GUI.BoardSquare*0
+
+__unknown_file (
+
+%8Piezas.Queen2&setPieceOnSquare(LGUI/ChessGamePiece;)*
+2*é
+startingBlock4 4(Aè
+å
+3 3(
+%11"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard\
+Z
+4( 4(-
+boardGUI.ChessGameBoard"__annotation*#
+
+__unknown_file (
+
+%11*
+8*ÿ
+59 9($~|
+9 9(&	
+%4int"%GUI.ChessGamePiece#getColorOfPiece()I*+
+
+__unknown_file (
+Piezas.Pawn2getColorOfPiece()A
+?
+9* 9(>	
+%5int"__id*"
+
+__unknown_file (
+""*
+2
+3*◊
+76 6(çä
+7 7(;
+%1java.util.ArrayList"MPiezas.Pawn#calculatePossibleMoves(LGUI/ChessGameBoard;)Ljava/util/ArrayList;*+
+
+__unknown_file (
+Piezas.Pawn*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard2,calculatePossibleMoves(LGUI/ChessGameBoard;)m
+k
+7 7(; 
+Piezas.Pawn"
+possibleMoves"__id*7
+
+__unknown_file (
+
+%1java.util.ArrayList~|
+8 8($	
+%2int"%GUI.ChessGamePiece#getColorOfPiece()I*+
+
+__unknown_file (
+Piezas.Pawn2getColorOfPiece()A
+?
+8( 8(<	
+%3int"__id*"
+
+__unknown_file (
+""*
+3
+5*ç
+85 5(ı
+Ú
+5 5(*
+%0boolean"0GUI.ChessGamePiece#move(LGUI/ChessGameBoard;II)Z*"
+
+__unknown_file (
+""*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""*
+7
+1*!
+1B B("
+B B(
+"":'
+4 4(.
+boardGUI.ChessGameBoard: 
+
+__unknown_file (
+"": 
+
+__unknown_file (
+""B
+Piezas.PawnHP

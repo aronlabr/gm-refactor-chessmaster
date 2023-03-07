@@ -1,0 +1,2 @@
+GUI.ChessGameBoard#initializeBoard()V
+GUI.ChessGameBoard#createBoardSquare(II)V

@@ -1,0 +1,62 @@
+
+/GUI.ChessGameBoard#getCell(II)LGUI/BoardSquare;u
+kF:/1_CicloVERANO 2023/Mantenimiento de software/ajedrez/gm-refactor-chessmaster/src/GUI/ChessGameBoard.java8 8("3*≈
+2: :(q
+o
+: :(
+%1GUI.BoardSquare[][]"__id*B
+
+__unknown_file (&*$
+GUI.ChessGameBoard"
+
+chessCellsè
+å
+: :("
+%2GUI.BoardSquare[]"
+__arrayGet*7
+
+__unknown_file (
+
+%1GUI.BoardSquare[][]*"
+
+__unknown_file (
+""ã
+à
+: :('
+%3GUI.BoardSquare"
+__arrayGet*5
+
+__unknown_file (
+
+%2GUI.BoardSquare[]*"
+
+__unknown_file (
+"""#
+: :((
+
+%3GUI.BoardSquare*›
+39 9( ≈
+¬
+9 9(,
+%0boolean"+GUI.ChessGameBoard#validateCoordinates(II)Z*2
+
+__unknown_file (
+GUI.ChessGameBoard*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""*
+2
+1*!
+1< <("
+< <(
+"": 
+
+__unknown_file (
+"": 
+
+__unknown_file (
+""B
+GUI.ChessGameBoardH

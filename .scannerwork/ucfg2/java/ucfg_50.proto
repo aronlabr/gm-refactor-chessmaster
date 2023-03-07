@@ -1,0 +1,62 @@
+
++GUI.ChessGameEngine#selectedPieceIsValid()Zv
+lF:/1_CicloVERANO 2023/Mantenimiento de software/ajedrez/gm-refactor-chessmaster/src/GUI/ChessGameEngine.javaq q(("5*Ê
+2x x(s
+q
+x x(
+%1GUI.ChessGamePiece"__id*E
+
+__unknown_file ()*'
+GUI.ChessGameEngine"
+currentPieceäá
+x x(1	
+%2int"%GUI.ChessGamePiece#getColorOfPiece()I*6
+
+__unknown_file (
+
+%1GUI.ChessGamePiece2getColorOfPiece()A
+?
+x5 x(I	
+%3int"__id*"
+
+__unknown_file (
+"""
+x x(J
+""*!
+4t t("
+t t(
+""*ç
+5s s(s
+q
+s s(
+%0GUI.ChessGamePiece"__id*E
+
+__unknown_file ()*'
+GUI.ChessGameEngine"
+currentPiece*	
+2
+4
+1*Ê
+1{ {(s
+q
+{ {(
+%4GUI.ChessGamePiece"__id*E
+
+__unknown_file ()*'
+GUI.ChessGameEngine"
+currentPieceäá
+{ {(1	
+%5int"%GUI.ChessGamePiece#getColorOfPiece()I*6
+
+__unknown_file (
+
+%4GUI.ChessGamePiece2getColorOfPiece()A
+?
+{5 {(I	
+%6int"__id*"
+
+__unknown_file (
+"""
+{ {(J
+""B
+GUI.ChessGameEngineP

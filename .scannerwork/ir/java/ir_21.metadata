@@ -1,0 +1,3 @@
+GUI.ChessGamePiece#calculateSouthWestMoves(LGUI/ChessGameBoard;I)Ljava/util/ArrayList;
+java.util.ArrayList#<init>()V
+java.util.ArrayList#instance-init#

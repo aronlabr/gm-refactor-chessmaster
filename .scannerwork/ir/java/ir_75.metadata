@@ -1,0 +1,2 @@
+GUI.ChessGameBoard#getCell(II)LGUI/BoardSquare;
+GUI.ChessGameBoard#validateCoordinates(II)Z

@@ -1,0 +1,3 @@
+Piezas.Pawn#calculatePossibleMoves(LGUI/ChessGameBoard;)Ljava/util/ArrayList;
+java.util.ArrayList#<init>()V
+java.util.ArrayList#instance-init#

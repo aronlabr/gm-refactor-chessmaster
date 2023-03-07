@@ -1,0 +1,3 @@
+GUI.ChessGameBoard#resetBoard(Z)V
+GUI.BoardSquare#instance-init#
+GUI.BoardSquare#<init>(IILGUI/ChessGamePiece;)V

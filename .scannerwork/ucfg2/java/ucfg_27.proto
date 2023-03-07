@@ -1,0 +1,211 @@
+
+AGUI.ChessGamePiece#testMoveForKingSafety(LGUI/ChessGameBoard;II)Zw
+kF:/1_CicloVERANO 2023/Mantenimiento de software/ajedrez/gm-refactor-chessmaster/src/GUI/ChessGamePiece.java¯ ¯()"1*ó
+1
+¸ ¸(ÙÒ
+
+¸ ¸("
+
+%0void"=GUI.ChessGamePiece#updatePossibleMoves(LGUI/ChessGameBoard;)V*2
+
+__unknown_file (
+GUI.ChessGamePiece*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard2)updatePossibleMoves(LGUI/ChessGameBoard;)Á‰
+
+˝/ ˝(F
+%1GUI.BoardSquare"/GUI.ChessGameBoard#getCell(II)LGUI/BoardSquare;*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""2getCell(II)™ß
+
+˝/ ˝(Y
+%2GUI.ChessGamePiece"6GUI.BoardSquare#getPieceOnSquare()LGUI/ChessGamePiece;*3
+
+__unknown_file (
+
+%1GUI.BoardSquare2getPieceOnSquare()y
+w
+
+˝ ˝(Z+
+oldPieceOnOtherSquareGUI.ChessGamePiece"__id*6
+
+__unknown_file (
+
+%2GUI.ChessGamePiece•¢
+
+˛/ ˛(@
+%3java.awt.Container"2java.awt.Component#getParent()Ljava/awt/Container;*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard2getParent()®•
+
+˛! ˛(Q
+%4GUI.ChessGameEngine"3GUI.ChessPanel#getGameEngine()LGUI/ChessGameEngine;*6
+
+__unknown_file (
+
+%3java.awt.Container2getGameEngine()l
+j
+
+˛ ˛(R
+engineGUI.ChessGameEngine"__id*7
+
+__unknown_file (
+
+%4GUI.ChessGameEngine–Õ
+
+Å Å(.
+
+%5void"!GUI.ChessGameBoard#clearCell(II)V*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""2clearCell(II)◊‘
+
+Ç Ç('
+
+%6void"(GUI.ChessGamePiece#setPieceLocation(II)V*2
+
+__unknown_file (
+GUI.ChessGamePiece*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""2setPieceLocation(II)Á‰
+
+É É(
+%7GUI.BoardSquare"/GUI.ChessGameBoard#getCell(II)LGUI/BoardSquare;*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""2getCell(II)Â‚
+
+É É(6
+
+%8void"7GUI.BoardSquare#setPieceOnSquare(LGUI/ChessGamePiece;)V*3
+
+__unknown_file (
+
+%7GUI.BoardSquare*2
+
+__unknown_file (
+GUI.ChessGamePiece2&setPieceOnSquare(LGUI/ChessGamePiece;)∂≥
+
+Ñ Ñ(4
+%9boolean"%GUI.ChessGameEngine#isKingInCheck(Z)Z*;
+
+__unknown_file (
+
+engineGUI.ChessGameEngine* 
+
+__unknown_file (22isKingInCheck(Z)ÿ’
+
+Ü Ü(0
+%10void"(GUI.ChessGamePiece#setPieceLocation(II)V*2
+
+__unknown_file (
+GUI.ChessGamePiece*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""2setPieceLocation(II)ËÂ
+
+á á((
+%11GUI.BoardSquare"/GUI.ChessGameBoard#getCell(II)LGUI/BoardSquare;*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""2getCell(II)Á‰
+
+á á(?
+%12void"7GUI.BoardSquare#setPieceOnSquare(LGUI/ChessGamePiece;)V*4
+
+__unknown_file (
+
+%11GUI.BoardSquare*2
+
+__unknown_file (
+GUI.ChessGamePiece2&setPieceOnSquare(LGUI/ChessGamePiece;)—Œ
+
+à à(!
+%13void"!GUI.ChessGameBoard#clearCell(II)V*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""2clearCell(II)ËÂ
+
+ä ä(
+%14GUI.BoardSquare"/GUI.ChessGameBoard#getCell(II)LGUI/BoardSquare;*9
+
+__unknown_file (
+
+boardGUI.ChessGameBoard*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""2getCell(II)˛˚
+
+ä ä(G
+%15void"7GUI.BoardSquare#setPieceOnSquare(LGUI/ChessGamePiece;)V*4
+
+__unknown_file (
+
+%14GUI.BoardSquare*I
+
+__unknown_file (-
++
+oldPieceOnOtherSquareGUI.ChessGamePiece2&setPieceOnSquare(LGUI/ChessGamePiece;)"
+
+ã ã(
+"":)
+
+˘ ˘(!
+boardGUI.ChessGameBoard: 
+
+__unknown_file (
+"": 
+
+__unknown_file (
+""B
+GUI.ChessGamePieceP

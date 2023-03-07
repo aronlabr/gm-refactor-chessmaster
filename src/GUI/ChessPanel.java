@@ -4,9 +4,9 @@ import javax.swing.*;
 
 import org.junit.*;
 
-import Interfaces.MenuFactory;
+import Factory.DefaultChessComponentFactory;
+import components.ChessComponentFactory;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 // -------------------------------------------------------------------------
 /**
@@ -31,19 +31,19 @@ public class ChessPanel
      */
     public ChessPanel(){
         this.setLayout( new BorderLayout() );
-        //creamos un menuBar factory
-        menuBar = new ChessMenuBar();
-        gameBoard = new ChessGameBoard();
-        gameLog = new ChessGameLog();
-        playerOneGraveyard = new ChessGraveyard( "Player 1's graveyard" );
-        playerTwoGraveyard = new ChessGraveyard( "Player 2's graveyard" );
+        ChessComponentFactory componentFactory = new DefaultChessComponentFactory();
+        menuBar = componentFactory.createMenuBar();
+        gameBoard = componentFactory.createGameBoard();
+        gameLog = componentFactory.createGameLog();
+        playerOneGraveyard = componentFactory.createGraveyard("Player 1's graveyard");
+        playerTwoGraveyard = componentFactory.createGraveyard("Player 2's graveyard");
         this.add( menuBar, BorderLayout.NORTH );
         this.add( gameBoard, BorderLayout.CENTER );
         this.add( gameLog, BorderLayout.SOUTH );
         this.add( playerOneGraveyard, BorderLayout.WEST );
         this.add( playerTwoGraveyard, BorderLayout.EAST );
         this.setPreferredSize( new Dimension( 800, 600 ) );
-        gameEngine = new ChessGameEngine( gameBoard ); // start the game
+        gameEngine = componentFactory.createGameEngine(gameBoard); // start the game
     }
     // ----------------------------------------------------------
     /**
@@ -84,10 +84,33 @@ public class ChessPanel
         return (whichPlayer == 1) ? playerOneGraveyard : (whichPlayer == 2) ? playerTwoGraveyard : null;
     }
 
+
+    // Esta prueba comprueba que el método ChessPanel.getGameLog() devuelve una instancia de ChessGameLog
+    // El ChessPanel se crea usando el constructor
+
     @Test
     public void testGetGameLog() {
-        ChessPanel panel = new ChessPanel();
+        ChessPanel panel = new ChessPanel(); // aqui crea los componentes con el patron factory
         ChessGameLog log = panel.getGameLog();
         assertTrue(log instanceof ChessGameLog);
+    }
+    // El siguiente código crea un nuevo objeto ChessPanel y llama a su función getGameBoard.
+    // La función getGameBoard devuelve un objeto ChessGameBoard, que se asigna al tablero
+    // variable. A continuación, se comprueba la variable del tablero para ver si es una instancia de ChessGameBoard.
+    // Si es así, la prueba pasa.
+    @Test
+    public void testGetGameBoard() {
+        ChessPanel panel = new ChessPanel();
+        ChessGameBoard board = panel.getGameBoard();
+        assertTrue(board instanceof ChessGameBoard);
+    }
+    // Esta prueba comprueba que el método getGameEngine de la clase ChessPanel devuelve un objeto ChessGameEngine.
+    // El método getGameEngine se usa para devolver el objeto del motor del juego que se usa en el juego.
+
+    @Test
+    public void testGetGameEngine() {
+        ChessPanel panel = new ChessPanel();
+        ChessGameEngine engine = panel.getGameEngine();
+        assertTrue(engine instanceof ChessGameEngine);
     }
 }

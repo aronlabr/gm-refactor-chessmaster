@@ -1,0 +1,7 @@
+organization=jonathanlara27
+projectKey=JonathanLara27_chess
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.38480
+dashboardUrl=https://sonarcloud.io/dashboard?id=JonathanLara27_chess
+ceTaskId=AYayea4Sdy2Xdn85zaCS
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYayea4Sdy2Xdn85zaCS
