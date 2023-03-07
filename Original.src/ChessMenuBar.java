@@ -1,5 +1,4 @@
 package clases;
-
 import java.awt.Component;
 import java.awt.event.*;
 import javax.swing.*;
@@ -77,8 +76,7 @@ public class ChessMenuBar
      * Takes an appropriate action if the about button is clicked.
      */
     private void aboutHandler(){
-        JOptionPane.showMessageDialog(
-            this.getParent(),
+        JOptionPane.showMessageDialog( this.getParent(),
             "YetAnotherChessGame v1.0 by:\nBen Katz\nMyles David\n"
                 + "Danielle Bushrow\n\nFinal Project for CS2114 @ VT" );
     }
@@ -101,9 +99,9 @@ public class ChessMenuBar
             possibleFrame = possibleFrame.getParent();
         }
         if ( possibleFrame != null ) {
-        JFrame frame = (JFrame)possibleFrame;
-        frame.setVisible( false );
-        frame.dispose();
+            JFrame frame = (JFrame)possibleFrame;
+            frame.setVisible( false );
+            frame.dispose();
         }
     }
     /**

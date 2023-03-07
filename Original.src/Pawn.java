@@ -1,7 +1,7 @@
 package clases;
-
 import javax.swing.ImageIcon;
 import java.util.ArrayList;
+import java.util.List;
 // -------------------------------------------------------------------------
 /**
  * Represents a Pawn game piece. Unique in that it can move two locations on its
@@ -99,22 +99,27 @@ public class Pawn
                 count++;
             }
             // check for enemy capture points
-            if ( getColorOfPiece() == ChessGamePiece.WHITE ){
-                if ( isEnemy( board, pieceRow - 1, pieceColumn - 1 ) ){
-                    moves.add( ( pieceRow - 1 ) + "," + ( pieceColumn - 1 ) );
-                }
-                if ( isEnemy( board, pieceRow - 1, pieceColumn + 1 ) ){
-                    moves.add( ( pieceRow - 1 ) + "," + ( pieceColumn + 1 ) );
-                }
+            moves = (ArrayList<String>) checkEnemyCapture(board, moves);
+        }
+        return moves;
+    }
+    
+    public List<String> checkEnemyCapture( ChessGameBoard board, List<String> moves ){
+        if ( getColorOfPiece() == ChessGamePiece.WHITE ){
+            if ( isEnemy( board, pieceRow - 1, pieceColumn - 1 ) ){
+                moves.add( ( pieceRow - 1 ) + "," + ( pieceColumn - 1 ) );
             }
-            else
-            {
-                if ( isEnemy( board, pieceRow + 1, pieceColumn - 1 ) ){
-                    moves.add( ( pieceRow + 1 ) + "," + ( pieceColumn - 1 ) );
-                }
-                if ( isEnemy( board, pieceRow + 1, pieceColumn + 1 ) ){
-                    moves.add( ( pieceRow + 1 ) + "," + ( pieceColumn + 1 ) );
-                }
+            if ( isEnemy( board, pieceRow - 1, pieceColumn + 1 ) ){
+                moves.add( ( pieceRow - 1 ) + "," + ( pieceColumn + 1 ) );
+            }
+        }
+        else
+        {
+            if ( isEnemy( board, pieceRow + 1, pieceColumn - 1 ) ){
+                moves.add( ( pieceRow + 1 ) + "," + ( pieceColumn - 1 ) );
+            }
+            if ( isEnemy( board, pieceRow + 1, pieceColumn + 1 ) ){
+                moves.add( ( pieceRow + 1 ) + "," + ( pieceColumn + 1 ) );
             }
         }
         return moves;

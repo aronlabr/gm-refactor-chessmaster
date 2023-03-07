@@ -49,7 +49,7 @@ public class Bishop extends ChessGamePiece{
         return allMoves;
     }
     /**
-     * Creates an icon for this piece depending on the pieces color.
+     * Creates an icon for this piece depending on the piece's color.
      * 
      * @return ImageIcon the ImageIcon representation of this piece.
      */

@@ -1,5 +1,4 @@
 package clases;
-
 import java.awt.GridLayout;
 import javax.swing.*;
 // -------------------------------------------------------------------------

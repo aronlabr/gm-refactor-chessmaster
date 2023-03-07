@@ -1,5 +1,4 @@
 package clases;
-
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
@@ -138,8 +137,7 @@ public abstract class ChessGamePiece{
         int count = 0;
         if ( isPieceOnScreen() ){
             for ( int i = pieceRow + 1; i < 8 && count < numMoves; i++ ){
-                if ( ( board.getCell( i, pieceColumn ).getPieceOnSquare()
-                    == null || isEnemy( board, i, pieceColumn ) ) ){
+                if ( ( board.getCell( i, pieceColumn ).getPieceOnSquare() == null || isEnemy( board, i, pieceColumn ) ) ){
                     moves.add( i + "," + pieceColumn );
                     count++;
                     if ( isEnemy( board, i, pieceColumn ) ){

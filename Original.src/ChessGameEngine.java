@@ -1,9 +1,9 @@
 package clases;
 
-import java.util.List;
 import java.awt.Color;
 import javax.swing.JOptionPane;
 import java.awt.event.MouseEvent;
+import java.util.List;
 // -------------------------------------------------------------------------
 /**
  * This is the backend behind the Chess game. Handles the turn-based aspects of
@@ -242,31 +242,7 @@ public class ChessGameEngine{
         board.clearColorsOnBoard();
         if ( firstClick ){
             currentPiece = squareClicked.getPieceOnSquare();
-            if ( selectedPieceIsValid() ){
-                currentPiece.showLegalMoves( board );
-                squareClicked.setBackground( Color.GREEN );
-                firstClick = false;
-            }
-            else
-            {
-                if ( currentPiece != null ){
-                    JOptionPane.showMessageDialog(
-                        squareClicked,
-                        "You tried to pick up the other player's piece! "
-                            + "Get some glasses and pick a valid square.",
-                        "Illegal move",
-                        JOptionPane.ERROR_MESSAGE );
-                }
-                else
-                {
-                    JOptionPane.showMessageDialog(
-                        squareClicked,
-                        "You tried to pick up an empty square! "
-                            + "Get some glasses and pick a valid square.",
-                        "Illegal move",
-                        JOptionPane.ERROR_MESSAGE );
-                }
-            }
+            validateFirstClick(squareClicked);
         }
         else
         {
@@ -304,4 +280,33 @@ public class ChessGameEngine{
             }
         }
     }
+    
+    public void validateFirstClick(BoardSquare squareClicked){
+        if ( selectedPieceIsValid() ){
+            currentPiece.showLegalMoves( board );
+            squareClicked.setBackground( Color.GREEN );
+            firstClick = false;
+        }
+        else
+        {
+            if ( currentPiece != null ){
+                JOptionPane.showMessageDialog(
+                    squareClicked,
+                    "You tried to pick up the other player's piece! "
+                        + "Get some glasses and pick a valid square.",
+                    "Illegal move",
+                    JOptionPane.ERROR_MESSAGE );
+            }
+            else
+            {
+                JOptionPane.showMessageDialog(
+                    squareClicked,
+                    "You tried to pick up an empty square! "
+                        + "Get some glasses and pick a valid square.",
+                    "Illegal move",
+                    JOptionPane.ERROR_MESSAGE );
+            }
+        }
+    }
+    
 }

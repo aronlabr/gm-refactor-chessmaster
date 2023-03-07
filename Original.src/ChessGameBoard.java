@@ -1,12 +1,12 @@
 package clases;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.Color;
 import javax.swing.JPanel;
 import java.awt.GridLayout;
+import java.util.List;
 // -------------------------------------------------------------------------
 /**
  * The panel that represents the Chess game board. Contains a few methods that
@@ -18,8 +18,8 @@ import java.awt.GridLayout;
  * @version 2010.11.17
  */
 public class ChessGameBoard extends JPanel{
-    private BoardSquare[][] chessCells;
-    private BoardListener   listener;
+    private BoardSquare[][]           chessCells;
+    private transient BoardListener   listener;
     // ----------------------------------------------------------
     /**
      * Returns the entire board.
@@ -162,39 +162,7 @@ public class ChessGameBoard extends JPanel{
         for ( int i = 0; i < chessCells.length; i++ ){
             for ( int j = 0; j < chessCells[0].length; j++ ){
                 ChessGamePiece pieceToAdd;
-                if ( i == 1 ) // black pawns
-                {
-                    pieceToAdd = new Pawn( this, i, j, ChessGamePiece.BLACK );
-                }
-                else if ( i == 6 ) // white pawns
-                {
-                    pieceToAdd = new Pawn( this, i, j, ChessGamePiece.WHITE );
-                }
-                else if ( i == 0 || i == 7 ) // main rows
-                {
-                    int colNum =
-                        i == 0 ? ChessGamePiece.BLACK : ChessGamePiece.WHITE;
-                    if ( j == 0 || j == 7 ){
-                        pieceToAdd = new Rook( this, i, j, colNum );
-                    }
-                    else if ( j == 1 || j == 6 ){
-                        pieceToAdd = new Knight( this, i, j, colNum );
-                    }
-                    else if ( j == 2 || j == 5 ){
-                        pieceToAdd = new Bishop( this, i, j, colNum );
-                    }
-                    else if ( j == 3 ){
-                        pieceToAdd = new King( this, i, j, colNum );
-                    }
-                    else
-                    {
-                        pieceToAdd = new Queen( this, i, j, colNum );
-                    }
-                }
-                else
-                {
-                    pieceToAdd = null;
-                }
+                pieceToAdd = choosePiece(i, j);
                 chessCells[i][j] = new BoardSquare( i, j, pieceToAdd );
                 if ( ( i + j ) % 2 == 0 ){
                     chessCells[i][j].setBackground( Color.WHITE );
@@ -207,6 +175,41 @@ public class ChessGameBoard extends JPanel{
                 this.add( chessCells[i][j] );
             }
         }
+    }
+    
+    public ChessGamePiece choosePiece(int i, int j){
+        ChessGamePiece pieceToAdd;
+        pieceToAdd = null;
+        if ( i == 1 ) // black pawns
+        {
+            pieceToAdd = new Pawn( this, i, j, ChessGamePiece.BLACK );
+        }
+        else if ( i == 6 ) // white pawns
+        {
+            pieceToAdd = new Pawn( this, i, j, ChessGamePiece.WHITE );
+        }
+        else if ( i == 0 || i == 7 ) // main rows
+        {
+            int colNum =
+                i == 0 ? ChessGamePiece.BLACK : ChessGamePiece.WHITE;
+            if ( j == 0 || j == 7 ){
+                pieceToAdd = new Rook( this, i, j, colNum );
+            }
+            else if ( j == 1 || j == 6 ){
+                pieceToAdd = new Knight( this, i, j, colNum );
+            }
+            else if ( j == 2 || j == 5 ){
+                pieceToAdd = new Bishop( this, i, j, colNum );
+            }
+            else if ( j == 3 ){
+                pieceToAdd = new King( this, i, j, colNum );
+            }
+            else
+            {
+                pieceToAdd = new Queen( this, i, j, colNum );
+            }
+        }
+        return pieceToAdd;
     }
     // ----------------------------------------------------------
     /**
