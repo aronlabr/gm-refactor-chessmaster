@@ -40,7 +40,7 @@ public class King
      * @return ArrayList<> the moves
      */
     @Override
-    protected ArrayList<String> calculatePossibleMoves( ChessGameBoard board ){
+    public ArrayList<String> calculatePossibleMoves( ChessGameBoard board ){
         ArrayList<String> allMoves = new ArrayList<>();
         allMoves.addAll( calculateNorthEastMoves( board, 1 ) );
         allMoves.addAll( calculateNorthWestMoves( board, 1 ) );

@@ -39,7 +39,7 @@ public class Rook
      * @return ArrayList<> the list of moves
      */
     @Override
-    protected ArrayList<String> calculatePossibleMoves( ChessGameBoard board ){
+    public ArrayList<String> calculatePossibleMoves( ChessGameBoard board ){
         ArrayList<String> allMoves = new ArrayList<>();
         allMoves.addAll( calculateNorthMoves( board, 8 ) );
         allMoves.addAll( calculateSouthMoves( board, 8 ) );
